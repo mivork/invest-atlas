@@ -1,0 +1,267 @@
+/* ===== レイアウト ===== */
+/* サイト全体の3カラムレイアウト・ヘッダー・フッター */
+
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ヘッダー */
+.header {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: var(--z-index-header);
+  background-color: var(--color-primary-deep-green);
+  color: var(--color-text-light);
+  block-size: var(--layout-header-height);
+}
+
+.header__inner {
+  max-width: var(--layout-max-width);
+  margin-inline: auto;
+  padding-inline: var(--space-6);
+  block-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-6);
+}
+
+.header__logo {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-text-light);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.header__logo:hover {
+  color: var(--color-background-sage);
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.header__nav-link {
+  color: var(--color-text-light);
+  text-decoration: none;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.header__nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-text-light);
+}
+
+.header__nav-link[aria-current="page"] {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* サイト本体 - 3カラム */
+.site__body {
+  flex: 1;
+  display: grid;
+  grid-template-columns: var(--layout-sidebar-width) minmax(0, 1fr) var(--layout-rail-width);
+  max-width: var(--layout-max-width);
+  margin-inline: auto;
+  width: 100%;
+  gap: 0;
+}
+
+.site__body--no-rail {
+  grid-template-columns: var(--layout-sidebar-width) minmax(0, 1fr);
+}
+
+/* サイドバー */
+.sidebar {
+  background-color: var(--color-background-light);
+  border-inline-end: 1px solid var(--color-border-light);
+  padding: var(--space-6) var(--space-4);
+  position: sticky;
+  inset-block-start: var(--layout-header-height);
+  block-size: calc(100vh - var(--layout-header-height));
+  overflow-y: auto;
+}
+
+.sidebar__section-title {
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-secondary);
+  margin-block: var(--space-6) var(--space-3);
+}
+
+.sidebar__section-title:first-child {
+  margin-block-start: 0;
+}
+
+.sidebar__link {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--border-radius-md);
+  color: var(--color-text-primary);
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+  margin-block-end: var(--space-1);
+}
+
+.sidebar__link:hover {
+  background-color: var(--color-background-sage);
+  color: var(--color-primary-deep-green);
+}
+
+.sidebar__link[aria-current="page"] {
+  background-color: var(--color-primary-deep-green);
+  color: var(--color-text-light);
+  font-weight: 700;
+}
+
+.sidebar__number {
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  color: var(--color-accent-green);
+  min-inline-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.sidebar__link[aria-current="page"] .sidebar__number {
+  color: var(--color-background-sage);
+}
+
+/* メインコンテンツ */
+.main {
+  padding: var(--space-8) var(--space-8) var(--space-12);
+  min-width: 0;
+  max-width: var(--layout-content-max-width);
+  width: 100%;
+  margin-inline: auto;
+}
+
+.main--full {
+  max-width: none;
+}
+
+/* 右レール */
+.right-rail {
+  padding: var(--space-8) var(--space-6);
+  border-inline-start: 1px solid var(--color-border-light);
+  position: sticky;
+  inset-block-start: var(--layout-header-height);
+  block-size: calc(100vh - var(--layout-header-height));
+  overflow-y: auto;
+  background-color: var(--color-background-light);
+}
+
+.right-rail__title {
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-secondary);
+  margin-block-end: var(--space-3);
+}
+
+.right-rail__toc-link {
+  display: block;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--border-radius-md);
+  color: var(--color-text-primary);
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+  margin-block-end: var(--space-1);
+  border-inline-start: 2px solid transparent;
+}
+
+.right-rail__toc-link:hover {
+  background-color: var(--color-background-sage);
+  color: var(--color-primary-deep-green);
+}
+
+.right-rail__toc-link--active {
+  border-inline-start-color: var(--color-accent-green);
+  background-color: var(--color-background-sage);
+  font-weight: 700;
+  color: var(--color-primary-deep-green);
+}
+
+.right-rail__terms {
+  margin-block-start: var(--space-8);
+  padding-block-start: var(--space-6);
+  border-block-start: 1px solid var(--color-border-light);
+}
+
+.right-rail__term {
+  margin-block-end: var(--space-4);
+}
+
+.right-rail__term-name {
+  font-weight: 700;
+  font-size: var(--font-size-sm);
+  color: var(--color-primary-deep-green);
+  margin-block-end: var(--space-1);
+}
+
+.right-rail__term-def {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-normal);
+}
+
+/* フッター */
+.footer {
+  background-color: var(--color-primary-deep-green);
+  color: var(--color-text-light);
+  padding: var(--space-8) 0;
+  margin-block-start: auto;
+}
+
+.footer__inner {
+  max-width: var(--layout-max-width);
+  margin-inline: auto;
+  padding-inline: var(--space-6);
+}
+
+.footer__disclaimer {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  margin-block-end: var(--space-4);
+  max-width: 60rem;
+}
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-block-end: var(--space-4);
+}
+
+.footer__link {
+  color: var(--color-text-light);
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+}
+
+.footer__link:hover {
+  color: var(--color-background-sage);
+  text-decoration: underline;
+}
+
+.footer__copy {
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.7);
+  margin-block-end: 0;
+}
