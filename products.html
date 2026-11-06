@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>金融商品を知る — Invest Atlas</title>
+  <meta name="description" content="投資信託・ETF・債券の特徴と違いを比較して整理します。それぞれのメリット・注意点を理解しましょう。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="site">
+
+  <a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
+
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">Invest Atlas</a>
+      <nav class="header__nav" aria-label="グローバルナビゲーション">
+        <a href="guide.html" class="header__nav-link">学習ガイド</a>
+        <a href="glossary.html" class="header__nav-link">用語集</a>
+        <a href="simulator.html" class="header__nav-link">シミュレーター</a>
+        <a href="sources.html" class="header__nav-link">出典・免責</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="site__body">
+
+    <nav class="sidebar" aria-label="学習メニュー">
+      <div class="sidebar__section-title">学習コンテンツ</div>
+      <a href="basics.html" class="sidebar__link"><span class="sidebar__number">01</span>投資の基本</a>
+      <a href="listing.html" class="sidebar__link"><span class="sidebar__number">02</span>上場とIPO</a>
+      <a href="index-investing.html" class="sidebar__link"><span class="sidebar__number">03</span>指数と投資信託</a>
+
+      <a href="orukan.html" class="sidebar__link"><span class="sidebar__number">04</span>オルカンとは</a>
+      <a href="sp500.html" class="sidebar__link"><span class="sidebar__number">05</span>S&amp;P 500とは</a>
+      <a href="compare.html" class="sidebar__link"><span class="sidebar__number">06</span>オルカン vs S&amp;P 500</a>
+      <a href="nisa.html" class="sidebar__link"><span class="sidebar__number">07</span>新しいNISA</a>
+      <a href="products.html" class="sidebar__link"><span class="sidebar__number">08</span>金融商品を知る</a>
+      <a href="individual-stocks.html" class="sidebar__link"><span class="sidebar__number">09</span>個別株投資</a>
+      <a href="risk.html" class="sidebar__link"><span class="sidebar__number">10</span>リスクと分散</a>
+      <a href="costs-taxes.html" class="sidebar__link"><span class="sidebar__number">11</span>コストと税金</a>
+      <a href="advanced.html" class="sidebar__link"><span class="sidebar__number">12</span>上級編</a>
+      <div class="sidebar__section-title">ツール・資料</div>
+      <a href="guide.html" class="sidebar__link">学習ガイド</a>
+      <a href="glossary.html" class="sidebar__link">用語集</a>
+      <a href="simulator.html" class="sidebar__link">シミュレーター</a>
+      <a href="sources.html" class="sidebar__link">出典・免責</a>
+    </nav>
+
+    <main id="main-content" class="main">
+
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <a href="index.html" class="breadcrumb__link">ホーム</a>
+        <span class="breadcrumb__separator" aria-hidden="true">/</span>
+        <span class="breadcrumb__current">金融商品を知る</span>
+      </nav>
+
+      <span class="level-badge level-badge--intermediate">中級</span>
+
+      <article>
+        <h1 class="h1">金融商品を知る</h1>
+
+        <div class="lead-box">
+          <p class="lead-box__title">このページで学ぶこと</p>
+          <ul class="lead-box__list">
+
+            <li>投資信託の仕組みと特徴</li>
+            <li>ETF（上場投資信託）の仕組みと特徴</li>
+            <li>債券の仕組みと特徴</li>
+            <li>3つの金融商品の比較</li>
+          </ul>
+        </div>
+
+        <!-- 投資信託 -->
+        <section class="section" id="mutual-funds" aria-labelledby="sec-mutual">
+          <h2 id="sec-mutual" class="section__title">投資信託</h2>
+          <p>投資信託は、多くの投資家から集めた資金をひとつにまとめ、運用の専門家が株式や債券などに分散投資する金融商品です。</p>
+
+          <h3 class="section__subtitle">主な特徴</h3>
+          <ul>
+            <li>少額から投資できる（証券会社によっては100円から）</li>
+            <li>専門家が運用するため、個別銘柄の選定が不要</li>
+            <li>1つのファンドで複数の銘柄に分散投資できる</li>
+            <li>基準価額は1日1回算出される</li>
+            <li>信託報酬（運用管理費用）が継続的にかかる</li>
+            <li>購入時手数料がかかる場合がある（ノーロードの場合は無料）</li>
+          </ul>
+
+          <h3 class="section__subtitle">分配金について</h3>
+          <p>投資信託の中には、運用益の一部を「分配金」として定期的に支払うものがあります。ただし、分配金は運用益からだけでなく、元本を取り崩して支払われる場合もあります（元本払戻金 / 特別分配金）。分配金が多いファンドが良いファンドとは限りません。</p>
+        </section>
+
+        <!-- ETF -->
+        <section class="section" id="etf-detail" aria-labelledby="sec-etf-detail">
+          <h2 id="sec-etf-detail" class="section__title">ETF（上場投資信託）</h2>
+          <p>ETF（Exchange Traded Fund）は、証券取引所に上場している投資信託です。株式と同じようにリアルタイムで売買でき、多くは特定の株価指数への連動を目指します。</p>
+
+          <h3 class="section__subtitle">主な特徴</h3>
+
+          <ul>
+            <li>取引所でリアルタイムに売買できる（株式と同様）</li>
+            <li>指値注文・成行注文が可能</li>
+            <li>一般的に投資信託よりも信託報酬がやや低い傾向がある</li>
+            <li>分配金は原則として自動再投資されず、現金で支払われる</li>
+            <li>購入単位は1口（または1株）から</li>
+            <li>売買時に証券会社の売買手数料がかかる場合がある</li>
+          </ul>
+
+          <h3 class="section__subtitle">国内ETFと海外ETF</h3>
+          <p>日本の証券取引所に上場しているETF（国内ETF）と、海外の取引所に上場しているETF（海外ETF）があります。海外ETFは為替手数料や外国株式の売買手数料がかかる場合があります。</p>
+        </section>
+
+        <!-- 債券 -->
+        <section class="section" id="bonds" aria-labelledby="sec-bonds">
+          <h2 id="sec-bonds" class="section__title">債券</h2>
+          <p>債券は、国や企業などが資金を借り入れるために発行する有価証券です。投資家は債券を購入することで発行体にお金を貸し、その見返りとして利子（クーポン）を受け取り、満期には元本が返済されます。</p>
+
+          <h3 class="section__subtitle">主な特徴</h3>
+          <ul>
+            <li>定期的に利子（クーポン）が支払われる（固定利付債の場合）</li>
+            <li>満期（償還日）に額面金額が返済される</li>
+            <li>一般的に株式よりも価格変動が小さい傾向がある</li>
+            <li>発行体の信用リスク（デフォルトリスク）がある</li>
+            <li>金利変動により債券価格が変動する（金利上昇で価格下落、金利低下で価格上昇）</li>
+          </ul>
+
+          <h3 class="section__subtitle">債券の種類</h3>
+          <ul>
+            <li>国債: 国が発行する債券。日本国債、米国債など。一般的に信用リスクが低い</li>
+            <li>社債: 企業が発行する債券。国債より利回りが高い傾向があるが、信用リスクも高い</li>
+            <li>外国債券: 外国の政府や企業が発行する債券。為替リスクがある</li>
+
+          </ul>
+
+          <div class="callout callout--info">
+            <p class="callout__title">債券と金利の関係</p>
+            <p>債券価格と金利は逆方向に動きます。金利が上がると、既に発行されている（より低い金利の）債券の価値は下がります。逆に金利が下がると、既発行債券の価値は上がります。この関係は債券投資を理解する上で重要です。</p>
+          </div>
+        </section>
+
+        <!-- 比較表 -->
+        <section class="section" id="product-comparison" aria-labelledby="sec-product-compare">
+          <h2 id="sec-product-compare" class="section__title">3つの金融商品の比較</h2>
+
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th scope="col">項目</th>
+                <th scope="col">投資信託</th>
+                <th scope="col">ETF</th>
+                <th scope="col">債券</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>売買の場所</td>
+                <td>販売会社（証券会社・銀行等）</td>
+                <td>証券取引所</td>
+                <td>証券会社（店頭取引が多い）</td>
+              </tr>
+              <tr>
+                <td>価格決定</td>
+                <td>1日1回の基準価額</td>
+                <td>リアルタイムの市場価格</td>
+
+                <td>店頭価格または市場価格</td>
+              </tr>
+              <tr>
+                <td>最低投資額</td>
+                <td>少額から（100円〜）</td>
+                <td>1口単位</td>
+                <td>商品により異なる（個人向け国債は1万円から）</td>
+              </tr>
+              <tr>
+                <td>分散投資</td>
+                <td>1本で多数の銘柄に分散</td>
+                <td>1本で多数の銘柄に分散</td>
+                <td>1銘柄は1発行体のみ</td>
+              </tr>
+              <tr>
+                <td>主なリターン</td>
+                <td>値上がり益・分配金</td>
+                <td>値上がり益・分配金</td>
+                <td>利子（クーポン）・値上がり益</td>
+              </tr>
+              <tr>
+                <td>主なリスク</td>
+                <td>価格変動リスク・為替リスク</td>
+                <td>価格変動リスク・為替リスク</td>
+                <td>信用リスク・金利変動リスク・為替リスク</td>
+              </tr>
+              <tr>
+                <td>運用コスト</td>
+                <td>信託報酬（継続的）</td>
+                <td>信託報酬（一般にやや低い）</td>
+                <td>なし（ただし売買時のスプレッドあり）</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </section>
+
+        <!-- よくある誤解 -->
+        <section class="section" aria-labelledby="sec-products-misconceptions">
+          <h2 id="sec-products-misconceptions" class="section__title">よくある誤解</h2>
+          <div class="accordion">
+            <div class="accordion__item">
+              <button class="accordion__trigger" aria-expanded="false" aria-controls="products-mis-1">
+                <span>「債券は安全でリスクがない」</span>
+                <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/>
+                </svg>
+              </button>
+              <div class="accordion__content" id="products-mis-1" hidden>
+                <p>債券は一般的に株式よりも価格変動が小さい傾向がありますが、信用リスク（発行体が利払いや元本返済をできなくなるリスク）や金利変動リスクがあります。外国債券には為替リスクもあります。「リスクがない」わけではありません。</p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__trigger" aria-expanded="false" aria-controls="products-mis-2">
+                <span>「分配金が多いファンドが良いファンド」</span>
+                <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/>
+                </svg>
+              </button>
+              <div class="accordion__content" id="products-mis-2" hidden>
+                <p>分配金は運用益からだけでなく、元本を取り崩して支払われることがあります（元本払戻金）。この場合、実質的に自分の投資したお金が返ってきているだけです。分配金の額だけでファンドの良し悪しを判断することはできません。</p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__trigger" aria-expanded="false" aria-controls="products-mis-3">
+
+                <span>「ETFは投資信託よりも常に優れている」</span>
+                <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/>
+                </svg>
+              </button>
+              <div class="accordion__content" id="products-mis-3" hidden>
+                <p>ETFと投資信託にはそれぞれの特徴があります。ETFは信託報酬がやや低い傾向がありますが、自動積立に対応していない場合や、分配金の自動再投資ができない場合があります。どちらが適しているかは、投資スタイルや利用する証券会社によって異なります。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Quiz -->
+        <section class="quiz" data-quiz aria-labelledby="products-quiz-title">
+          <h2 id="products-quiz-title" class="quiz__title">理解度チェック</h2>
+
+          <div class="quiz__question" data-question data-answer="b">
+            <p class="quiz__question-text">Q1. 債券価格と金利の関係として正しいものはどれですか?</p>
+            <div class="quiz__options">
+              <div class="quiz__option" data-value="a" role="button" tabindex="0">a) 金利が上がると債券価格も上がる</div>
+              <div class="quiz__option" data-value="b" role="button" tabindex="0">b) 金利が上がると債券価格は下がる</div>
+              <div class="quiz__option" data-value="c" role="button" tabindex="0">c) 金利と債券価格には関係がない</div>
+            </div>
+            <div class="quiz__feedback" data-feedback-correct>正解です。債券価格と金利は逆方向に動きます。金利が上昇すると、既発行の債券の価格は下落します。</div>
+            <div class="quiz__feedback" data-feedback-incorrect>不正解です。債券価格と金利は逆の関係にあります。金利が上がると既発行の債券の魅力が相対的に下がり、価格が下落します。</div>
+          </div>
+
+          <div class="quiz__question" data-question data-answer="c">
+            <p class="quiz__question-text">Q2. ETFの特徴として正しいものはどれですか?</p>
+            <div class="quiz__options">
+              <div class="quiz__option" data-value="a" role="button" tabindex="0">a) 基準価額は1日1回のみ決まる</div>
+              <div class="quiz__option" data-value="b" role="button" tabindex="0">b) 銀行の窓口でのみ購入できる</div>
+
+              <div class="quiz__option" data-value="c" role="button" tabindex="0">c) 証券取引所でリアルタイムに売買できる</div>
+            </div>
+            <div class="quiz__feedback" data-feedback-correct>正解です。ETFは証券取引所に上場しており、株式と同様にリアルタイムで売買できます。</div>
+            <div class="quiz__feedback" data-feedback-incorrect>不正解です。ETFは証券取引所に上場しているため、取引時間中はリアルタイムの市場価格で売買できます。</div>
+          </div>
+
+          <div class="quiz__question" data-question data-answer="a">
+            <p class="quiz__question-text">Q3. 投資信託の分配金について正しいものはどれですか?</p>
+            <div class="quiz__options">
+              <div class="quiz__option" data-value="a" role="button" tabindex="0">a) 元本を取り崩して支払われる場合がある</div>
+              <div class="quiz__option" data-value="b" role="button" tabindex="0">b) 必ず運用益から支払われる</div>
+              <div class="quiz__option" data-value="c" role="button" tabindex="0">c) 分配金は預金利子と同じで元本に影響しない</div>
+            </div>
+            <div class="quiz__feedback" data-feedback-correct>正解です。分配金は運用益からだけでなく、元本を取り崩して支払われる場合があります（元本払戻金）。</div>
+            <div class="quiz__feedback" data-feedback-incorrect>不正解です。分配金は運用益から支払われるとは限らず、元本の取り崩し（元本払戻金）で支払われることもあります。</div>
+          </div>
+        </section>
+
+        <div class="read-check">
+          <input type="checkbox" id="read-check" class="read-check__checkbox">
+          <label for="read-check" id="read-check-label">このページを読了にする</label>
+        </div>
+
+        <section class="related-pages" aria-labelledby="products-related-title">
+          <h2 id="products-related-title" class="related-pages__title">関連ページ</h2>
+          <div class="card-grid card-grid--3">
+            <a href="individual-stocks.html" class="card">
+              <span class="card__label">次のステップ</span>
+              <h3 class="card__title">個別株投資</h3>
+              <p class="card__desc">個別株式の分析指標と投資の考え方を解説します。</p>
+            </a>
+            <a href="index-investing.html" class="card">
+
+              <h3 class="card__title">指数と投資信託</h3>
+              <p class="card__desc">インデックスファンドの仕組みを詳しく学びます。</p>
+            </a>
+            <a href="costs-taxes.html" class="card">
+              <h3 class="card__title">コストと税金</h3>
+              <p class="card__desc">投資にかかる各種コストと税金を整理します。</p>
+            </a>
+          </div>
+        </section>
+
+        <nav class="page-nav" aria-label="前後のページ">
+          <a href="nisa.html" class="page-nav__link">
+            <span class="page-nav__direction">前のページ</span>
+            <span class="page-nav__title">07 新しいNISA</span>
+          </a>
+          <a href="individual-stocks.html" class="page-nav__link page-nav__link--next">
+            <span class="page-nav__direction">次のページ</span>
+            <span class="page-nav__title">09 個別株投資</span>
+          </a>
+        </nav>
+
+      </article>
+
+      <div class="disclaimer-footnote">
+        当サイトは投資教育を目的としており、特定の金融商品の購入や売却を推奨するものではありません。投資には元本割れのリスクがあります。投資判断はご自身の責任で行ってください。
+      </div>
+
+    </main>
+
+    <aside class="right-rail" aria-label="目次・キーワード">
+      <div class="right-rail__title">目次</div>
+      <a href="#mutual-funds" class="right-rail__toc-link">投資信託</a>
+
+      <a href="#etf-detail" class="right-rail__toc-link">ETF</a>
+      <a href="#bonds" class="right-rail__toc-link">債券</a>
+      <a href="#product-comparison" class="right-rail__toc-link">3つの比較</a>
+
+      <div class="right-rail__terms">
+        <div class="right-rail__title">キーワード</div>
+        <div class="right-rail__term">
+          <div class="right-rail__term-name">元本払戻金</div>
+          <div class="right-rail__term-def">分配金のうち元本を取り崩して支払われる部分</div>
+        </div>
+        <div class="right-rail__term">
+          <div class="right-rail__term-name">クーポン</div>
+          <div class="right-rail__term-def">債券の保有者に定期的に支払われる利子</div>
+        </div>
+        <div class="right-rail__term">
+          <div class="right-rail__term-name">信用リスク</div>
+          <div class="right-rail__term-def">発行体が利払いや元本返済をできなくなるリスク</div>
+        </div>
+        <div class="right-rail__term">
+          <div class="right-rail__term-name">ノーロード</div>
+          <div class="right-rail__term-def">購入時手数料がかからない投資信託のこと</div>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <p class="footer__disclaimer">当サイトは投資教育を目的としており、特定の金融商品を推奨するものではありません。投資には元本割れのリスクがあります。</p>
+      <nav class="footer__links" aria-label="フッターナビゲーション">
+        <a href="index.html" class="footer__link">ホーム</a>
+
+        <a href="guide.html" class="footer__link">学習ガイド</a>
+        <a href="glossary.html" class="footer__link">用語集</a>
+        <a href="simulator.html" class="footer__link">シミュレーター</a>
+        <a href="sources.html" class="footer__link">出典・免責</a>
+      </nav>
+      <p class="footer__copy">&copy; <span class="footer__year"></span> Invest Atlas</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/quiz.js" defer></script>
+  <script src="js/progress.js" defer></script>
+</body>
+</html>

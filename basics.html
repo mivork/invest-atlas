@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>投資の基本 — Invest Atlas</title>
+  <meta name="description" content="投資とは何か、貯金との違い、投資と投機の違い、株式の仕組み、市場の仕組みを解説します。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="site">
+
+  <a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
+
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">Invest Atlas</a>
+      <nav class="header__nav" aria-label="グローバルナビゲーション">
+        <a href="guide.html" class="header__nav-link">学習ガイド</a>
+        <a href="glossary.html" class="header__nav-link">用語集</a>
+        <a href="simulator.html" class="header__nav-link">シミュレーター</a>
+        <a href="sources.html" class="header__nav-link">出典・免責</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="site__body">
+
+    <nav class="sidebar" aria-label="学習メニュー">
+      <div class="sidebar__section-title">学習コンテンツ</div>
+      <a href="basics.html" class="sidebar__link"><span class="sidebar__number">01</span>投資の基本</a>
+      <a href="listing.html" class="sidebar__link"><span class="sidebar__number">02</span>上場とIPO</a>
+      <a href="index-investing.html" class="sidebar__link"><span class="sidebar__number">03</span>指数と投資信託</a>
+      <a href="orukan.html" class="sidebar__link"><span class="sidebar__number">04</span>オルカンとは</a>
+      <a href="sp500.html" class="sidebar__link"><span class="sidebar__number">05</span>S&amp;P 500とは</a>
+      <a href="compare.html" class="sidebar__link"><span class="sidebar__number">06</span>オルカン vs S&amp;P 500</a>
+      <a href="nisa.html" class="sidebar__link"><span class="sidebar__number">07</span>新しいNISA</a>
+      <a href="products.html" class="sidebar__link"><span class="sidebar__number">08</span>金融商品を知る</a>
+      <a href="individual-stocks.html" class="sidebar__link"><span class="sidebar__number">09</span>個別株投資</a>
+      <a href="risk.html" class="sidebar__link"><span class="sidebar__number">10</span>リスクと分散</a>
+      <a href="costs-taxes.html" class="sidebar__link"><span class="sidebar__number">11</span>コストと税金</a>
+      <a href="advanced.html" class="sidebar__link"><span class="sidebar__number">12</span>上級編</a>
+      <div class="sidebar__section-title">ツール・資料</div>
+      <a href="guide.html" class="sidebar__link">学習ガイド</a>
+      <a href="glossary.html" class="sidebar__link">用語集</a>
+      <a href="simulator.html" class="sidebar__link">シミュレーター</a>
+      <a href="sources.html" class="sidebar__link">出典・免責</a>
+    </nav>
+
+    <main id="main-content" class="main">
+
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <a href="index.html" class="breadcrumb__link">ホーム</a>
+        <span class="breadcrumb__separator" aria-hidden="true">/</span>
+        <span class="breadcrumb__current">投資の基本</span>
+      </nav>
+
+      <span class="level-badge level-badge--beginner">初級</span>
+
+      <article>
+        <h1 class="h1">投資の基本</h1>
+
+        <div class="lead-box">
+          <p class="lead-box__title">このページで学ぶこと</p>
+          <ul class="lead-box__list">
+            <li>投資とは何か、貯金との違い</li>
+            <li>投資と投機の違い</li>
+            <li>株式とは何か、株主の権利</li>
+            <li>株価が決まる仕組み</li>
+            <li>市場（取引所・証券会社・投資家）の仕組み</li>
+          </ul>
+        </div>
+
+        <!-- 投資とは -->
+        <section class="section" id="what-is-investing" aria-labelledby="sec-what-is-investing">
+          <h2 id="sec-what-is-investing" class="section__title">投資とは</h2>
+          <p>投資とは、将来の利益を期待して、資金を資産に投じる行為です。株式や債券、投資信託、不動産など、さまざまな資産に資金を投じることで、将来的な値上がり益（キャピタルゲイン）や、配当・利子などの収益（インカムゲイン）を得ることを目指します。</p>
+          <p>投資の本質は「お金に働いてもらう」ことです。銀行預金の利息だけでは資産はほとんど増えませんが、投資を通じて企業の成長や経済の発展に参加することで、長期的に資産を増やす可能性があります。ただし、投資には元本割れのリスクが伴います。</p>
+
+          <div class="figure-block">
+            <p class="figure-block__title">投資で得られる2つの利益</p>
+            <ul>
+              <li>キャピタルゲイン: 資産の値上がりによる利益（例: 株価が上がって売却する）</li>
+              <li>インカムゲイン: 資産を保有することで得られる定期的な収益（例: 配当金、利子）</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 貯金との違い -->
+        <section class="section" id="savings-vs-investing" aria-labelledby="sec-savings">
+          <h2 id="sec-savings" class="section__title">貯金との違い</h2>
+          <p>貯金（預金）と投資の最大の違いは、元本保証の有無とリターンの大きさです。</p>
+
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">貯金（預金）</th>
+                <th scope="col">投資</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>元本保証</td>
+                <td>あり（預金保険制度の範囲内）</td>
+                <td>なし（元本割れのリスクあり）</td>
+              </tr>
+              <tr>
+                <td>リターン</td>
+                <td>利息（低水準）</td>
+                <td>値上がり益・配当・利子（変動が大きい）</td>
+              </tr>
+              <tr>
+                <td>流動性</td>
+                <td>高い（いつでも引き出せる）</td>
+                <td>商品による（売却に時間がかかる場合も）</td>
+              </tr>
+              <tr>
+                <td>インフレへの強さ</td>
+                <td>弱い（物価上昇で実質価値が目減り）</td>
+                <td>比較的強い（資産価格が物価とともに上がる傾向）</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>貯金は「使う予定のあるお金」や「生活防衛資金」を置く場所として適しています。一方、投資は「当面使う予定のないお金」を長期的に育てる手段です。どちらか一方ではなく、目的に応じて使い分けることが大切です。</p>
+        </section>
+
+        <!-- 投資と投機 -->
+        <section class="section" id="investing-vs-speculation" aria-labelledby="sec-speculation">
+          <h2 id="sec-speculation" class="section__title">投資と投機</h2>
+          <p>投資と投機は、どちらも資産の値動きから利益を得ようとする行為ですが、その考え方と時間軸が異なります。</p>
+          <ul>
+            <li>投資: 企業の成長や資産の価値に着目し、長期的な視点で資金を投じる。短期的な価格変動に一喜一憂しない。</li>
+            <li>投機: 短期的な価格変動から利益を得ようとする行為。値動きの予測に依存するため、リスクが高い。</li>
+          </ul>
+          <p>両者の境界は必ずしも明確ではありませんが、長期的な視点と分散を重視するのが「投資」の考え方です。当サイトでは、長期・分散を前提とした投資の知識を中心に扱います。</p>
+        </section>
+
+        <!-- 株式とは -->
+        <section class="section" id="what-is-stock" aria-labelledby="sec-stock">
+          <h2 id="sec-stock" class="section__title">株式とは</h2>
+          <p>株式とは、企業が事業資金を調達するために発行する証券です。株式を購入すると、その企業の「株主」となり、企業の所有者の一部となります。</p>
+
+          <h3 class="section__subtitle">株主の主な権利</h3>
+          <ul>
+            <li>配当を受け取る権利: 企業が利益を出したときに、その一部を配当金として受け取れる</li>
+            <li>株主総会での議決権: 経営方針や役員の選任などに投票できる</li>
+            <li>残余財産の分配請求権: 企業が解散した際に、残った財産の分配を受けられる</li>
+          </ul>
+
+          <div class="callout callout--info">
+            <p class="callout__title">株主＝企業の所有者</p>
+            <p>株式を保有することは、企業の所有権の一部を持つことです。ただし、日常の経営は経営陣に任されており、株主は議決権を通じて間接的に関与します。</p>
+          </div>
+        </section>
+
+        <!-- 株価の決まり方 -->
+        <section class="section" id="how-price-decided" aria-labelledby="sec-price">
+          <h2 id="sec-price" class="section__title">株価の決まり方</h2>
+          <p>株価は、市場における「需要と供給」のバランスで決まります。買いたい人が多ければ株価は上がり、売りたい人が多ければ株価は下がります。</p>
+          <p>株価に影響を与える主な要因は以下のとおりです。</p>
+          <ul>
+            <li>企業業績: 売上や利益が予想を上回れば株価は上がりやすく、下回れば下がりやすい</li>
+            <li>経済環境: 金利、為替、景気動向などが市場全体に影響する</li>
+            <li>市場心理: 投資家の期待や不安が需給に反映される</li>
+            <li>外部要因: 政治情勢、自然災害、国際情勢なども影響する</li>
+          </ul>
+          <p>株価は将来の企業業績への「期待」を織り込んで動くため、現在の業績が良くても、将来への期待が低下すれば株価は下がることがあります。</p>
+        </section>
+
+        <!-- 市場の仕組み -->
+        <section class="section" id="market-mechanism" aria-labelledby="sec-market">
+          <h2 id="sec-market" class="section__title">市場の仕組み</h2>
+          <p>株式の売買は、主に証券取引所を通じて行われます。日本では東京証券取引所が代表的です。</p>
+
+          <h3 class="section__subtitle">市場参加者</h3>
+          <ul>
+            <li>取引所: 株式の売買が行われる場所（東京証券取引所など）</li>
+            <li>証券会社: 投資家の注文を取引所に取り次ぐ</li>
+            <li>投資家: 個人投資家や機関投資家（年金基金、投資信託など）</li>
+          </ul>
+
+          <h3 class="section__subtitle">注文の種類</h3>
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th scope="col">注文方法</th>
+                <th scope="col">内容</th>
+                <th scope="col">特徴</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>成行注文</td>
+                <td>価格を指定せずに注文する方法</td>
+                <td>すぐに約定しやすいが、思わぬ価格で約定する可能性がある</td>
+              </tr>
+              <tr>
+                <td>指値注文</td>
+                <td>価格を指定して注文する方法</td>
+                <td>希望価格で約定するが、価格に届かなければ約定しない</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- よくある誤解 -->
+        <section class="section" aria-labelledby="sec-basics-misconceptions">
+          <h2 id="sec-basics-misconceptions" class="section__title">よくある誤解</h2>
+          <div class="accordion">
+            <div class="accordion__item">
+              <button class="accordion__trigger" aria-expanded="false" aria-controls="basics-mis-1">
+                <span>「投資はお金持ちだけのもの」</span>
+                <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/>
+                </svg>
+              </button>
+              <div class="accordion__content" id="basics-mis-1" hidden>
+                <p>投資は少額から始められます。投資信託の積立投資では月100円から始められる商品もあります。重要なのは金額の大小ではなく、長期・分散の考え方です。</p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__trigger" aria-expanded="false" aria-controls="basics-mis-2">
+                <span>「投資＝ギャンブル」</span>
+                <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/>
+                </svg>
+              </button>
+              <div class="accordion__content" id="basics-mis-2" hidden>
+                <p>短期的な値動きだけを狙う投機的な取引はギャンブルに近くなりますが、長期・分散を前提とした投資は、企業の成長や経済の発展に参加する行為です。目的と時間軸が異なります。</p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__trigger" aria-expanded="false" aria-controls="basics-mis-3">
+                <span>「株価が上がれば必ず儲かる」</span>
+                <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/>
+                </svg>
+              </button>
+              <div class="accordion__content" id="basics-mis-3" hidden>
+                <p>株価が上がっても、売らなければ利益は確定しません（評価益）。また、配当や税金、手数料も考慮する必要があります。株価の上昇がそのまま手元の利益になるわけではありません。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Quiz -->
+        <section class="quiz" data-quiz aria-labelledby="basics-quiz-title">
+          <h2 id="basics-quiz-title" class="quiz__title">理解度チェック</h2>
+
+          <div class="quiz__question" data-question data-answer="b">
+            <p class="quiz__question-text">Q1. 投資と貯金の最も大きな違いは何ですか?</p>
+            <div class="quiz__options">
+              <div class="quiz__option" data-value="a" role="button" tabindex="0">a) 投資の方が必ず儲かる</div>
+              <div class="quiz__option" data-value="b" role="button" tabindex="0">b) 投資には元本割れのリスクがある</div>
+              <div class="quiz__option" data-value="c" role="button" tabindex="0">c) 投資は銀行ではできない</div>
+            </div>
+            <div class="quiz__feedback" data-feedback-correct>正解です。投資には元本割れのリスクがありますが、その分リターンの可能性も大きくなります。</div>
+            <div class="quiz__feedback" data-feedback-incorrect>不正解です。投資と貯金の最大の違いは、投資には元本割れのリスクがあることです。</div>
+          </div>
+
+          <div class="quiz__question" data-question data-answer="a">
+            <p class="quiz__question-text">Q2. 株主の主な権利として正しいものはどれですか?</p>
+            <div class="quiz__options">
+              <div class="quiz__option" data-value="a" role="button" tabindex="0">a) 配当を受け取る権利</div>
+              <div class="quiz__option" data-value="b" role="button" tabindex="0">b) 企業の経営を直接行う権利</div>
+              <div class="quiz__option" data-value="c" role="button" tabindex="0">c) 株価を決める権利</div>
+            </div>
+            <div class="quiz__feedback" data-feedback-correct>正解です。株主は配当を受け取る権利や株主総会での議決権を持ちます。</div>
+            <div class="quiz__feedback" data-feedback-incorrect>不正解です。株主の主な権利は、配当を受け取る権利や株主総会での議決権です。</div>
+          </div>
+
+          <div class="quiz__question" data-question data-answer="c">
+            <p class="quiz__question-text">Q3. 株価が決まる基本的な仕組みは何ですか?</p>
+            <div class="quiz__options">
+              <div class="quiz__option" data-value="a" role="button" tabindex="0">a) 企業が毎朝決める</div>
+              <div class="quiz__option" data-value="b" role="button" tabindex="0">b) 政府が決める</div>
+              <div class="quiz__option" data-value="c" role="button" tabindex="0">c) 市場での需要と供給のバランス</div>
+            </div>
+            <div class="quiz__feedback" data-feedback-correct>正解です。株価は、買いたい人と売りたい人の需給バランスで決まります。</div>
+            <div class="quiz__feedback" data-feedback-incorrect>不正解です。株価は市場での需要と供給のバランスで決まります。</div>
+          </div>
+        </section>
+
+        <div class="read-check">
+          <input type="checkbox" id="read-check" class="read-check__checkbox">
+          <label for="read-check" id="read-check-label">このページを読了にする</label>
+        </div>
+
+        <section class="related-pages" aria-labelledby="basics-related-title">
+          <h2 id="basics-related-title" class="related-pages__title">関連ページ</h2>
+          <div class="card-grid card-grid--3">
+            <a href="listing.html" class="card">
+              <span class="card__label">次のステップ</span>
+              <h3 class="card__title">上場とIPO</h3>
+              <p class="card__desc">企業が株式を上場する仕組みを学びます。</p>
+            </a>
+            <a href="index-investing.html" class="card">
+              <h3 class="card__title">指数と投資信託</h3>
+              <p class="card__desc">指数に連動する投資信託の仕組みを学びます。</p>
+            </a>
+            <a href="risk.html" class="card">
+              <h3 class="card__title">リスクと分散</h3>
+              <p class="card__desc">投資のリスクと分散の考え方を学びます。</p>
+            </a>
+          </div>
+        </section>
+
+        <nav class="page-nav" aria-label="前後のページ">
+          <a href="listing.html" class="page-nav__link page-nav__link--next">
+            <span class="page-nav__direction">次のページ</span>
+            <span class="page-nav__title">02 上場とIPO</span>
+          </a>
+        </nav>
+
+      </article>
+
+      <div class="disclaimer-footnote">
+        当サイトは投資教育を目的としており、特定の金融商品の購入や売却を推奨するものではありません。投資には元本割れのリスクがあります。投資判断はご自身の責任で行ってください。
+      </div>
+
+    </main>
+
+    <aside class="right-rail" aria-label="目次・キーワード">
+      <div class="right-rail__title">目次</div>
+      <a href="#what-is-investing" class="right-rail__toc-link">投資とは</a>
+      <a href="#savings-vs-investing" class="right-rail__toc-link">貯金との違い</a>
+      <a href="#investing-vs-speculation" class="right-rail__toc-link">投資と投機</a>
+      <a href="#what-is-stock" class="right-rail__toc-link">株式とは</a>
+      <a href="#how-price-decided" class="right-rail__toc-link">株価の決まり方</a>
+      <a href="#market-mechanism" class="right-rail__toc-link">市場の仕組み</a>
+
+      <div class="right-rail__terms">
+        <div class="right-rail__title">キーワード</div>
+        <div class="right-rail__term">
+          <div class="right-rail__term-name">キャピタルゲイン</div>
+          <div class="right-rail__term-def">資産の値上がりによる利益</div>
+        </div>
+        <div class="right-rail__term">
+          <div class="right-rail__term-name">インカムゲイン</div>
+          <div class="right-rail__term-def">配当・利子など保有による収益</div>
+        </div>
+        <div class="right-rail__term">
+          <div class="right-rail__term-name">株主</div>
+          <div class="right-rail__term-def">株式を保有し、企業の所有者の一部となる人</div>
+        </div>
+        <div class="right-rail__term">
+          <div class="right-rail__term-name">成行注文</div>
+          <div class="right-rail__term-def">価格を指定せずに注文する方法</div>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <p class="footer__disclaimer">当サイトは投資教育を目的としており、特定の金融商品を推奨するものではありません。投資には元本割れのリスクがあります。</p>
+      <nav class="footer__links" aria-label="フッターナビゲーション">
+        <a href="index.html" class="footer__link">ホーム</a>
+        <a href="guide.html" class="footer__link">学習ガイド</a>
+        <a href="glossary.html" class="footer__link">用語集</a>
+        <a href="simulator.html" class="footer__link">シミュレーター</a>
+        <a href="sources.html" class="footer__link">出典・免責</a>
+      </nav>
+      <p class="footer__copy">&copy; <span class="footer__year"></span> Invest Atlas</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/quiz.js" defer></script>
+  <script src="js/progress.js" defer></script>
+</body>
+</html>

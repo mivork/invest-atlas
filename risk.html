@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>リスクと分散 — Invest Atlas</title>
+  <meta name="description" content="投資におけるリスクの種類、分散投資の考え方、ポートフォリオの基本概念を解説します。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="site">
+
+  <a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
+
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">Invest Atlas</a>
+      <nav class="header__nav" aria-label="グローバルナビゲーション">
+        <a href="guide.html" class="header__nav-link">学習ガイド</a>
+        <a href="glossary.html" class="header__nav-link">用語集</a>
+        <a href="simulator.html" class="header__nav-link">シミュレーター</a>
+        <a href="sources.html" class="header__nav-link">出典・免責</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="site__body">
+
+    <nav class="sidebar" aria-label="学習メニュー">
+      <div class="sidebar__section-title">学習コンテンツ</div>
+      <a href="basics.html" class="sidebar__link"><span class="sidebar__number">01</span>投資の基本</a>
+      <a href="listing.html" class="sidebar__link"><span class="sidebar__number">02</span>上場とIPO</a>
+      <a href="index-investing.html" class="sidebar__link"><span class="sidebar__number">03</span>指数と投資信託</a>
+
+      <a href="orukan.html" class="sidebar__link"><span class="sidebar__number">04</span>オルカンとは</a>
+      <a href="sp500.html" class="sidebar__link"><span class="sidebar__number">05</span>S&amp;P 500とは</a>
+      <a href="compare.html" class="sidebar__link"><span class="sidebar__number">06</span>オルカン vs S&amp;P 500</a>
+      <a href="nisa.html" class="sidebar__link"><span class="sidebar__number">07</span>新しいNISA</a>
+      <a href="products.html" class="sidebar__link"><span class="sidebar__number">08</span>金融商品を知る</a>
+      <a href="individual-stocks.html" class="sidebar__link"><span class="sidebar__number">09</span>個別株投資</a>
+      <a href="risk.html" class="sidebar__link"><span class="sidebar__number">10</span>リスクと分散</a>
+      <a href="costs-taxes.html" class="sidebar__link"><span class="sidebar__number">11</span>コストと税金</a>
+      <a href="advanced.html" class="sidebar__link"><span class="sidebar__number">12</span>上級編</a>
+      <div class="sidebar__section-title">ツール・資料</div>
+      <a href="guide.html" class="sidebar__link">学習ガイド</a>
+      <a href="glossary.html" class="sidebar__link">用語集</a>
+      <a href="simulator.html" class="sidebar__link">シミュレーター</a>
+      <a href="sources.html" class="sidebar__link">出典・免責</a>
+    </nav>
+
+    <main id="main-content" class="main">
+
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <a href="index.html" class="breadcrumb__link">ホーム</a>
+        <span class="breadcrumb__separator" aria-hidden="true">/</span>
+        <span class="breadcrumb__current">リスクと分散</span>
+      </nav>
+
+      <span class="level-badge level-badge--intermediate">中級</span>
+
+      <article>
+        <h1 class="h1">リスクと分散</h1>
+
+        <div class="lead-box">
+          <p class="lead-box__title">このページで学ぶこと</p>
+          <ul class="lead-box__list">
+
+            <li>投資における「リスク」の意味</li>
+            <li>主なリスクの種類</li>
+            <li>分散投資の考え方と限界</li>
+            <li>ポートフォリオの基本概念</li>
+            <li>リスク許容度の考え方</li>
+          </ul>
+        </div>
+
+        <!-- リスクとは -->
+        <section class="section" id="what-is-risk" aria-labelledby="sec-risk">
+          <h2 id="sec-risk" class="section__title">投資における「リスク」とは</h2>
+          <p>日常用語では「リスク = 危険」という意味で使われますが、投資の世界では「リスク = リターンの不確実性（ばらつき）」を意味します。つまり、リスクが高いとは、リターンが大きく上振れする可能性も大きく下振れする可能性もある、ということです。</p>
+          <p>リスクとリターンは一般的にトレードオフの関係にあります。高いリターンを期待するためには、高いリスクを受け入れる必要があり、リスクを低く抑えればリターンも控えめになる傾向があります。</p>
+        </section>
+
+        <!-- リスクの種類 -->
+        <section class="section" id="risk-types" aria-labelledby="sec-risk-types">
+          <h2 id="sec-risk-types" class="section__title">主なリスクの種類</h2>
+
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th scope="col">リスクの種類</th>
+                <th scope="col">内容</th>
+                <th scope="col">例</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>価格変動リスク</td>
+                <td>株価や基準価額が変動するリスク</td>
+                <td>株式市場の暴落でファンドの価値が下落</td>
+
+              </tr>
+              <tr>
+                <td>為替リスク</td>
+                <td>為替レートの変動で円換算の価値が変わるリスク</td>
+                <td>円高になると外国資産の円換算額が減少</td>
+              </tr>
+              <tr>
+                <td>金利変動リスク</td>
+                <td>金利の変動により資産価値が変わるリスク</td>
+                <td>金利上昇で債券価格が下落</td>
+              </tr>
+              <tr>
+                <td>信用リスク</td>
+                <td>発行体が利払いや元本返済をできなくなるリスク</td>
+                <td>社債の発行企業が経営破綻</td>
+              </tr>
+              <tr>
+                <td>流動性リスク</td>
+                <td>売りたいときに適正な価格で売れないリスク</td>
+                <td>出来高の少ない銘柄で大量に売却しようとすると価格が大きく下がる</td>
+              </tr>
+              <tr>
+                <td>インフレリスク</td>
+                <td>物価上昇により実質的な資産価値が目減りするリスク</td>
+                <td>預金金利よりもインフレ率が高いと実質的に損失</td>
+              </tr>
+              <tr>
+                <td>カントリーリスク</td>
+                <td>投資先の国の政治・経済状況の変化によるリスク</td>
+                <td>新興国の政情不安により資産価値が下落</td>
+              </tr>
+            </tbody>
+
+          </table>
+        </section>
+
+        <!-- 分散投資 -->
+        <section class="section" id="diversification" aria-labelledby="sec-diversification">
+          <h2 id="sec-diversification" class="section__title">分散投資の考え方</h2>
+          <p>分散投資とは、投資先を複数の資産・銘柄・地域・時間に分けることで、特定のリスク要因の影響を軽減しようとする考え方です。</p>
+
+          <h3 class="section__subtitle">分散の軸</h3>
+          <ul>
+            <li>資産クラスの分散: 株式、債券、不動産（REIT）、現金など異なる資産に分散</li>
+            <li>地域の分散: 日本、米国、欧州、新興国など複数の地域に分散</li>
+            <li>銘柄の分散: 特定の企業に集中せず、複数の銘柄に分散</li>
+            <li>時間の分散: 一度にまとめて投資せず、時間をずらして投資する（ドルコスト平均法など）</li>
+          </ul>
+
+          <h3 class="section__subtitle">分散投資の限界</h3>
+          <p>分散投資はリスクを軽減する有効な手段ですが、万能ではありません。</p>
+          <ul>
+            <li>世界的な金融危機のように、すべての資産が同時に下落する局面では分散の効果が限定的になる</li>
+            <li>分散しすぎるとリターンが市場平均に近づき、個別銘柄で大きなリターンを得る機会が失われる</li>
+            <li>分散は「リスクの軽減」であり「リスクの排除」ではない</li>
+          </ul>
+
+          <div class="callout callout--info">
+            <p class="callout__title">システマティックリスクと非システマティックリスク</p>
+            <p>リスクは大きく2種類に分けられます。市場全体に影響する「システマティックリスク」（市場リスク）は分散投資で排除できません。一方、個別企業固有の「非システマティックリスク」は、十分な銘柄分散によって軽減できます。</p>
+          </div>
+        </section>
+
+        <!-- ポートフォリオ -->
+        <section class="section" id="portfolio" aria-labelledby="sec-portfolio">
+
+          <h2 id="sec-portfolio" class="section__title">ポートフォリオとは</h2>
+          <p>ポートフォリオとは、投資家が保有する金融資産の組み合わせ全体を指します。どの資産にどのくらいの割合で投資するか（資産配分 / アセットアロケーション）が、投資の成果に大きな影響を与えるとされています。</p>
+
+          <h3 class="section__subtitle">資産配分の考え方</h3>
+          <p>資産配分を決める際に考慮すべき要素には、以下のようなものがあります。</p>
+          <ul>
+            <li>投資目的: 何のために投資するのか（老後資金、住宅購入、教育資金など）</li>
+            <li>投資期間: いつまでに資金が必要か</li>
+            <li>リスク許容度: どの程度の損失まで許容できるか</li>
+            <li>年齢: 一般的に若いほどリスクを取りやすいとされる（投資期間が長いため）</li>
+            <li>他の収入源・資産: 投資以外の収入や資産の状況</li>
+          </ul>
+
+          <div class="callout callout--warning">
+            <p class="callout__title">当サイトでは特定のポートフォリオを推奨しません</p>
+            <p>最適な資産配分は個人の状況によって異なります。当サイトでは「この配分が正解」という特定のポートフォリオを推奨することはしません。資産配分について詳しく知りたい場合は、ファイナンシャルプランナーなどの専門家に相談することをおすすめします。</p>
+          </div>
+        </section>
+
+        <!-- リスク許容度 -->
+        <section class="section" id="risk-tolerance" aria-labelledby="sec-tolerance">
+          <h2 id="sec-tolerance" class="section__title">リスク許容度の考え方</h2>
+          <p>リスク許容度とは、投資家がどの程度の損失や価格変動を受け入れられるかの度合いです。リスク許容度は人によって異なり、以下のような要因に影響されます。</p>
+          <ul>
+            <li>年齢と投資期間: 若くて投資期間が長いほど、短期の下落を回復する時間がある</li>
+            <li>収入の安定性: 安定した収入がある場合、投資の損失を許容しやすい</li>
+            <li>生活防衛資金: 生活費の数ヶ月〜1年分の現金を確保していれば、投資でリスクを取りやすい</li>
+            <li>心理的な耐性: 投資額が大きく下落したときに冷静でいられるか</li>
+          </ul>
+
+          <div class="callout callout--info">
+            <p class="callout__title">生活防衛資金について</p>
+
+            <p>投資を始める前に、まず生活費の数ヶ月分（一般的には3〜6ヶ月分、人によってはそれ以上）を普通預金などのすぐに使える形で確保しておくことが重要です。生活防衛資金は投資に回すべきではありません。この金額は個人の状況（家族構成、収入の安定性、固定費の大きさなど）によって異なります。</p>
+          </div>
+        </section>
+
+        <!-- よくある誤解 -->
+        <section class="section" aria-labelledby="sec-risk-misconceptions">
+          <h2 id="sec-risk-misconceptions" class="section__title">よくある誤解</h2>
+          <div class="accordion">
+            <div class="accordion__item">
+              <button class="accordion__trigger" aria-expanded="false" aria-controls="risk-mis-1">
+                <span>「分散投資をすればリスクがゼロになる」</span>
+                <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/>
+                </svg>
+              </button>
+              <div class="accordion__content" id="risk-mis-1" hidden>
+                <p>分散投資は非システマティックリスク（個別銘柄固有のリスク）を軽減できますが、システマティックリスク（市場全体のリスク）は分散では排除できません。金融危機のように市場全体が下落する場面では、どれだけ分散していても損失が生じます。</p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__trigger" aria-expanded="false" aria-controls="risk-mis-2">
+                <span>「リスクが低い = 良い投資」</span>
+                <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/>
+                </svg>
+              </button>
+              <div class="accordion__content" id="risk-mis-2" hidden>
+                <p>リスクとリターンはトレードオフの関係にあります。リスクを極端に低くすればリターンも低くなります。大切なのは、自分のリスク許容度に合った水準でリスクを取ることであり、リスクが低いほど良いというわけではありません。</p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__trigger" aria-expanded="false" aria-controls="risk-mis-3">
+
+                <span>「若いからリスクをたくさん取るべき」</span>
+                <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/>
+                </svg>
+              </button>
+              <div class="accordion__content" id="risk-mis-3" hidden>
+                <p>若いほど投資期間が長く、短期の下落を回復する時間があるのは事実ですが、「若い = リスクをたくさん取るべき」とは限りません。収入の安定性、生活防衛資金の有無、心理的な耐性など、年齢以外の要因も重要です。無理なリスクを取ると、暴落時にパニック売りをしてしまう可能性があります。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Quiz -->
+        <section class="quiz" data-quiz aria-labelledby="risk-quiz-title">
+          <h2 id="risk-quiz-title" class="quiz__title">理解度チェック</h2>
+
+          <div class="quiz__question" data-question data-answer="b">
+            <p class="quiz__question-text">Q1. 投資における「リスク」の意味として最も適切なものはどれですか?</p>
+            <div class="quiz__options">
+              <div class="quiz__option" data-value="a" role="button" tabindex="0">a) 必ず損をすること</div>
+              <div class="quiz__option" data-value="b" role="button" tabindex="0">b) リターンの不確実性（ばらつき）のこと</div>
+              <div class="quiz__option" data-value="c" role="button" tabindex="0">c) 投資信託の手数料のこと</div>
+            </div>
+            <div class="quiz__feedback" data-feedback-correct>正解です。投資におけるリスクとは、リターンの不確実性（上にも下にもぶれる可能性）を意味します。</div>
+            <div class="quiz__feedback" data-feedback-incorrect>不正解です。投資における「リスク」は「危険」ではなく「リターンの不確実性」を意味します。上振れも下振れも含みます。</div>
+          </div>
+
+          <div class="quiz__question" data-question data-answer="c">
+            <p class="quiz__question-text">Q2. 分散投資で軽減できるリスクはどれですか?</p>
+            <div class="quiz__options">
+              <div class="quiz__option" data-value="a" role="button" tabindex="0">a) システマティックリスク（市場全体のリスク）</div>
+              <div class="quiz__option" data-value="b" role="button" tabindex="0">b) すべてのリスク</div>
+
+              <div class="quiz__option" data-value="c" role="button" tabindex="0">c) 非システマティックリスク（個別銘柄固有のリスク）</div>
+            </div>
+            <div class="quiz__feedback" data-feedback-correct>正解です。分散投資によって軽減できるのは、非システマティックリスク（個別銘柄や業種に固有のリスク）です。</div>
+            <div class="quiz__feedback" data-feedback-incorrect>不正解です。分散投資で軽減できるのは非システマティックリスク（個別銘柄固有のリスク）です。市場全体に影響するシステマティックリスクは分散では排除できません。</div>
+          </div>
+
+          <div class="quiz__question" data-question data-answer="a">
+            <p class="quiz__question-text">Q3. リスク許容度に影響する要因として適切でないものはどれですか?</p>
+            <div class="quiz__options">
+              <div class="quiz__option" data-value="a" role="button" tabindex="0">a) 友人がどの銘柄に投資しているか</div>
+              <div class="quiz__option" data-value="b" role="button" tabindex="0">b) 投資期間の長さ</div>
+              <div class="quiz__option" data-value="c" role="button" tabindex="0">c) 生活防衛資金の有無</div>
+            </div>
+            <div class="quiz__feedback" data-feedback-correct>正解です。友人の投資先は自分のリスク許容度とは関係ありません。投資期間、収入の安定性、生活防衛資金、心理的な耐性などが重要な要因です。</div>
+            <div class="quiz__feedback" data-feedback-incorrect>不正解です。リスク許容度は投資期間、収入の安定性、生活防衛資金、心理的な耐性などの自分自身の要因で判断すべきものです。</div>
+          </div>
+        </section>
+
+        <div class="read-check">
+          <input type="checkbox" id="read-check" class="read-check__checkbox">
+          <label for="read-check" id="read-check-label">このページを読了にする</label>
+        </div>
+
+        <section class="related-pages" aria-labelledby="risk-related-title">
+          <h2 id="risk-related-title" class="related-pages__title">関連ページ</h2>
+          <div class="card-grid card-grid--3">
+            <a href="costs-taxes.html" class="card">
+              <span class="card__label">次のステップ</span>
+              <h3 class="card__title">コストと税金</h3>
+              <p class="card__desc">投資にかかるコストと税金を理解しましょう。</p>
+            </a>
+            <a href="advanced.html" class="card">
+
+              <h3 class="card__title">上級編</h3>
+              <p class="card__desc">現代ポートフォリオ理論やシャープレシオを学びます。</p>
+            </a>
+            <a href="simulator.html" class="card">
+              <h3 class="card__title">シミュレーター</h3>
+              <p class="card__desc">複利の効果をシミュレーションで確認しましょう。</p>
+            </a>
+          </div>
+        </section>
+
+        <nav class="page-nav" aria-label="前後のページ">
+          <a href="individual-stocks.html" class="page-nav__link">
+            <span class="page-nav__direction">前のページ</span>
+            <span class="page-nav__title">09 個別株投資</span>
+          </a>
+          <a href="costs-taxes.html" class="page-nav__link page-nav__link--next">
+            <span class="page-nav__direction">次のページ</span>
+            <span class="page-nav__title">11 コストと税金</span>
+          </a>
+        </nav>
+
+      </article>
+
+      <div class="disclaimer-footnote">
+        当サイトは投資教育を目的としており、特定の金融商品の購入や売却を推奨するものではありません。投資には元本割れのリスクがあります。投資判断はご自身の責任で行ってください。
+      </div>
+
+    </main>
+
+    <aside class="right-rail" aria-label="目次・キーワード">
+      <div class="right-rail__title">目次</div>
+      <a href="#what-is-risk" class="right-rail__toc-link">リスクとは</a>
+
+      <a href="#risk-types" class="right-rail__toc-link">リスクの種類</a>
+      <a href="#diversification" class="right-rail__toc-link">分散投資</a>
+      <a href="#portfolio" class="right-rail__toc-link">ポートフォリオ</a>
+      <a href="#risk-tolerance" class="right-rail__toc-link">リスク許容度</a>
+
+      <div class="right-rail__terms">
+        <div class="right-rail__title">キーワード</div>
+        <div class="right-rail__term">
+          <div class="right-rail__term-name">リスク</div>
+          <div class="right-rail__term-def">リターンの不確実性。上振れも下振れも含む</div>
+        </div>
+        <div class="right-rail__term">
+          <div class="right-rail__term-name">ポートフォリオ</div>
+          <div class="right-rail__term-def">保有する金融資産の組み合わせ全体</div>
+        </div>
+        <div class="right-rail__term">
+          <div class="right-rail__term-name">アセットアロケーション</div>
+          <div class="right-rail__term-def">資産をどの資産クラスにどの割合で配分するか</div>
+        </div>
+        <div class="right-rail__term">
+          <div class="right-rail__term-name">生活防衛資金</div>
+          <div class="right-rail__term-def">生活費の数ヶ月分をすぐに使える形で確保した資金</div>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <p class="footer__disclaimer">当サイトは投資教育を目的としており、特定の金融商品を推奨するものではありません。投資には元本割れのリスクがあります。</p>
+      <nav class="footer__links" aria-label="フッターナビゲーション">
+
+        <a href="index.html" class="footer__link">ホーム</a>
+        <a href="guide.html" class="footer__link">学習ガイド</a>
+        <a href="glossary.html" class="footer__link">用語集</a>
+        <a href="simulator.html" class="footer__link">シミュレーター</a>
+        <a href="sources.html" class="footer__link">出典・免責</a>
+      </nav>
+      <p class="footer__copy">&copy; <span class="footer__year"></span> Invest Atlas</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/quiz.js" defer></script>
+  <script src="js/progress.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>複利シミュレーター — Invest Atlas</title>
+  <meta name="description" content="初期投資額・毎月の積立額・想定利回り・投資期間を入力して、複利効果による資産の成長をシミュレーションできます。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="site">
+
+  <a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
+
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">Invest Atlas</a>
+      <nav class="header__nav" aria-label="グローバルナビゲーション">
+        <a href="guide.html" class="header__nav-link">学習ガイド</a>
+        <a href="glossary.html" class="header__nav-link">用語集</a>
+        <a href="simulator.html" class="header__nav-link">シミュレーター</a>
+        <a href="sources.html" class="header__nav-link">出典・免責</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="site__body site__body--no-rail">
+
+    <nav class="sidebar" aria-label="学習メニュー">
+      <div class="sidebar__section-title">学習コンテンツ</div>
+      <a href="basics.html" class="sidebar__link"><span class="sidebar__number">01</span>投資の基本</a>
+      <a href="listing.html" class="sidebar__link"><span class="sidebar__number">02</span>上場とIPO</a>
+      <a href="index-investing.html" class="sidebar__link"><span class="sidebar__number">03</span>指数と投資信託</a>
+
+      <a href="orukan.html" class="sidebar__link"><span class="sidebar__number">04</span>オルカンとは</a>
+      <a href="sp500.html" class="sidebar__link"><span class="sidebar__number">05</span>S&amp;P 500とは</a>
+      <a href="compare.html" class="sidebar__link"><span class="sidebar__number">06</span>オルカン vs S&amp;P 500</a>
+      <a href="nisa.html" class="sidebar__link"><span class="sidebar__number">07</span>新しいNISA</a>
+      <a href="products.html" class="sidebar__link"><span class="sidebar__number">08</span>金融商品を知る</a>
+      <a href="individual-stocks.html" class="sidebar__link"><span class="sidebar__number">09</span>個別株投資</a>
+      <a href="risk.html" class="sidebar__link"><span class="sidebar__number">10</span>リスクと分散</a>
+      <a href="costs-taxes.html" class="sidebar__link"><span class="sidebar__number">11</span>コストと税金</a>
+      <a href="advanced.html" class="sidebar__link"><span class="sidebar__number">12</span>上級編</a>
+      <div class="sidebar__section-title">ツール・資料</div>
+      <a href="guide.html" class="sidebar__link">学習ガイド</a>
+      <a href="glossary.html" class="sidebar__link">用語集</a>
+      <a href="simulator.html" class="sidebar__link">シミュレーター</a>
+      <a href="sources.html" class="sidebar__link">出典・免責</a>
+    </nav>
+
+    <main id="main-content" class="main main--full">
+
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <a href="index.html" class="breadcrumb__link">ホーム</a>
+        <span class="breadcrumb__separator" aria-hidden="true">/</span>
+        <span class="breadcrumb__current">複利シミュレーター</span>
+      </nav>
+
+      <h1 class="h1">複利シミュレーター</h1>
+
+      <div class="lead-box">
+        <p class="lead-box__title">このツールについて</p>
+        <p>初期投資額・毎月の積立額・想定利回り・投資期間を入力すると、複利効果による資産の成長をグラフで確認できます。単利との比較もできます。</p>
+      </div>
+
+      <div class="simulator-page">
+
+
+        <div class="callout callout--warning">
+          <p class="callout__title">仮定・試算</p>
+          <p>このシミュレーションは一定の想定利回りで毎月複利運用した場合の試算です。実際の投資では、リターンは毎年変動し、元本割れのリスクがあります。手数料・税金は考慮していません。将来のリターンを保証するものではありません。</p>
+        </div>
+
+        <form class="simulator__form" id="simulator-form" aria-label="シミュレーション条件入力">
+          <div class="simulator__field">
+            <label class="simulator__label" for="initial">初期投資額（円）</label>
+            <input class="simulator__input" type="number" id="initial" value="100000" min="0" max="100000000" step="10000">
+          </div>
+          <div class="simulator__field">
+            <label class="simulator__label" for="monthly">毎月の積立額（円）</label>
+            <input class="simulator__input" type="number" id="monthly" value="30000" min="0" max="10000000" step="1000">
+          </div>
+          <div class="simulator__field">
+            <label class="simulator__label" for="rate">想定利回り（年率 %）</label>
+            <input class="simulator__input" type="number" id="rate" value="5" min="0" max="30" step="0.1">
+          </div>
+          <div class="simulator__field">
+            <label class="simulator__label" for="years">投資期間（年）</label>
+            <input class="simulator__input" type="number" id="years" value="20" min="1" max="50" step="1">
+          </div>
+          <button class="btn btn--primary" type="submit">計算する</button>
+        </form>
+
+        <div class="simulator__results" id="simulator-results">
+          <div class="simulator__result-item">
+            <span class="simulator__result-label">最終資産額（複利）</span>
+            <span class="simulator__result-value" id="result-compound">—</span>
+          </div>
+          <div class="simulator__result-item">
+
+            <span class="simulator__result-label">投資元本の合計</span>
+            <span class="simulator__result-value" id="result-principal">—</span>
+          </div>
+          <div class="simulator__result-item">
+            <span class="simulator__result-label">運用収益（複利 − 元本）</span>
+            <span class="simulator__result-value" id="result-growth">—</span>
+          </div>
+          <div class="simulator__result-item">
+            <span class="simulator__result-label">最終資産額（単利）</span>
+            <span class="simulator__result-value" id="result-simple">—</span>
+          </div>
+        </div>
+
+        <div class="simulator__chart-container">
+          <canvas id="simulator-chart" width="800" height="400" aria-label="複利シミュレーション結果のチャート" role="img"></canvas>
+        </div>
+
+        <div class="simulator__note">
+          <h2 class="section__title">複利の計算式</h2>
+          <p>このシミュレーターでは、以下の計算方法を使用しています。</p>
+          <ul>
+            <li>月利 = (1 + 年利)^(1/12) − 1（月次複利）</li>
+            <li>毎月末に積立額を追加し、その月の月利で運用</li>
+            <li>初期投資額は初月から運用開始</li>
+          </ul>
+          <p>参考値: 初期投資額10万円、毎月3万円積立、年利5%、20年間で約1,244万円になります（手数料・税金を考慮しない場合）。</p>
+        </div>
+
+      </div>
+
+      <div class="disclaimer-footnote">
+        当サイトは投資教育を目的としており、特定の金融商品の購入や売却を推奨するものではありません。投資には元本割れのリスクがあります。投資判断はご自身の責任で行ってください。
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <p class="footer__disclaimer">当サイトは投資教育を目的としており、特定の金融商品を推奨するものではありません。投資には元本割れのリスクがあります。</p>
+      <nav class="footer__links" aria-label="フッターナビゲーション">
+        <a href="index.html" class="footer__link">ホーム</a>
+        <a href="guide.html" class="footer__link">学習ガイド</a>
+        <a href="glossary.html" class="footer__link">用語集</a>
+        <a href="simulator.html" class="footer__link">シミュレーター</a>
+        <a href="sources.html" class="footer__link">出典・免責</a>
+      </nav>
+      <p class="footer__copy">&copy; <span class="footer__year"></span> Invest Atlas</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/simulator.js" defer></script>
+</body>
+</html>

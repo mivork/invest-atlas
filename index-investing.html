@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>指数と投資信託 — Invest Atlas</title>
+  <meta name="description" content="指数とは何か、インデックスファンドの仕組み、アクティブファンドとの比較、ベンチマークとトラッキングエラー、配当、積立投資とドルコスト平均法を解説します。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="site">
+
+  <a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
+
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">Invest Atlas</a>
+      <nav class="header__nav" aria-label="グローバルナビゲーション">
+        <a href="guide.html" class="header__nav-link">学習ガイド</a>
+        <a href="glossary.html" class="header__nav-link">用語集</a>
+        <a href="simulator.html" class="header__nav-link">シミュレーター</a>
+        <a href="sources.html" class="header__nav-link">出典・免責</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="site__body">
+
+    <nav class="sidebar" aria-label="学習メニュー">
+      <div class="sidebar__section-title">学習コンテンツ</div>
+      <a href="basics.html" class="sidebar__link"><span class="sidebar__number">01</span>投資の基本</a>
+      <a href="listing.html" class="sidebar__link"><span class="sidebar__number">02</span>上場とIPO</a>
+      <a href="index-investing.html" class="sidebar__link"><span class="sidebar__number">03</span>指数と投資信託</a>
+      <a href="orukan.html" class="sidebar__link"><span class="sidebar__number">04</span>オルカンとは</a>
+      <a href="sp500.html" class="sidebar__link"><span class="sidebar__number">05</span>S&amp;P 500とは</a>
+      <a href="compare.html" class="sidebar__link"><span class="sidebar__number">06</span>オルカン vs S&amp;P 500</a>
+      <a href="nisa.html" class="sidebar__link"><span class="sidebar__number">07</span>新しいNISA</a>
+      <a href="products.html" class="sidebar__link"><span class="sidebar__number">08</span>金融商品を知る</a>
+      <a href="individual-stocks.html" class="sidebar__link"><span class="sidebar__number">09</span>個別株投資</a>
+      <a href="risk.html" class="sidebar__link"><span class="sidebar__number">10</span>リスクと分散</a>
+      <a href="costs-taxes.html" class="sidebar__link"><span class="sidebar__number">11</span>コストと税金</a>
+      <a href="advanced.html" class="sidebar__link"><span class="sidebar__number">12</span>上級編</a>
+      <div class="sidebar__section-title">ツール・資料</div>
+      <a href="guide.html" class="sidebar__link">学習ガイド</a>
+      <a href="glossary.html" class="sidebar__link">用語集</a>
+      <a href="simulator.html" class="sidebar__link">シミュレーター</a>
+      <a href="sources.html" class="sidebar__link">出典・免責</a>
+    </nav>
+
+    <main id="main-content" class="main">
+
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <a href="index.html" class="breadcrumb__link">ホーム</a>
+        <span class="breadcrumb__separator" aria-hidden="true">/</span>
+        <span class="breadcrumb__current">指数と投資信託</span>
+      </nav>
+
+      <span class="level-badge level-badge--intermediate">中級</span>
+
+      <article>
+        <h1 class="h1">指数と投資信託</h1>
+
+        <div class="lead-box">
+          <p class="lead-box__title">このページで学ぶこと</p>
+          <ul class="lead-box__list">
+            <li>指数とは何か</li>
+            <li>インデックスファンドの仕組み</li>
+            <li>アクティブファンドとインデックスファンドの違い</li>
+            <li>ベンチマークとトラッキングエラー</li>
+            <li>配当の基本</li>
+            <li>積立投資とドルコスト平均法</li>
+          </ul>
+        </div>
+
+        <!-- 指数とは -->
+        <section class="section" id="what-is-index" aria-labelledby="sec-index">
+          <h2 id="sec-index" class="section__title">指数とは</h2>
+          <p>指数（インデックス）とは、市場全体の値動きを示す指標です。特定の市場や分野の株価を平均化し、数値化したもので、市場全体の動向を把握するための目安となります。</p>
+          <p>代表的な指数には以下のようなものがあります。</p>
+          <ul>
+            <li>日経平均株価: 日本の代表的な225社の株価を平均した指数</li>
+            <li>TOPIX: 東京証券取引所の全上場銘柄を対象とした指数</li>
+            <li>S&amp;P 500: 米国の代表的な500社の株価を対象とした指数</li>
+            <li>MSCI ACWI: 全世界の株式市場の値動きを示す指数</li>
+          </ul>
+
+          <div class="callout callout--info">
+            <p class="callout__title">指数は「市場全体の体温計」</p>
+            <p>指数は、市場全体が上がっているのか下がっているのかを示す指標です。個別の株価ではなく、市場全体の動向を把握するために使われます。</p>
+          </div>
+        </section>
+
+        <!-- インデックスファンド -->
+        <section class="section" id="index-funds" aria-labelledby="sec-index-funds">
+          <h2 id="sec-index-funds" class="section__title">インデックスファンドの仕組み</h2>
+          <p>インデックスファンドとは、特定の指数（ベンチマーク）の値動きに連動することを目指して運用される投資信託です。指数と同じ銘柄を同じ比率で保有することで、指数とほぼ同じ値動きを実現します。</p>
+          <p>インデックスファンドの特徴は以下のとおりです。</p>
+          <ul>
+            <li>分散投資が手軽にできる: 1つのファンドで数百〜数千の銘柄に分散投資できる</li>
+            <li>コストが低い: 指数に連動させるだけなので、運用コストが比較的低い</li>
+            <li>市場平均のリターン: 指数と同じ値動きを目指すため、市場平均並みのリターンが期待できる</li>
+          </ul>
+        </section>
+
+        <!-- アクティブファンドとの比較 -->
+        <section class="section" id="active-vs-index" aria-labelledby="sec-active-vs-index">
+          <h2 id="sec-active-vs-index" class="section__title">アクティブファンドとの比較</h2>
+          <p>アクティブファンドとは、指数を上回るリターンを目指して、ファンドマネージャーが積極的に銘柄を選んで運用する投資信託です。</p>
+
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">インデックスファンド</th>
+                <th scope="col">アクティブファンド</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>目標</td>
+                <td>指数と同じ値動きを目指す</td>
+                <td>指数を上回るリターンを目指す</td>
+              </tr>
+              <tr>
+                <td>運用方法</td>
+                <td>指数と同じ銘柄・比率で保有</td>
+                <td>ファンドマネージャーが銘柄を選択</td>
+              </tr>
+              <tr>
+                <td>コスト</td>
+                <td>比較的低い</td>
+                <td>比較的高い</td>
+              </tr>
+              <tr>
+                <td>リターン</td>
+                <td>市場平均並み</td>
+                <td>市場平均を上回る可能性も下回る可能性もある</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>アクティブファンドが指数を上回るリターンを出すことは可能ですが、長期間にわたって指数を上回り続けることは難しいとされています。また、コストが高い分、リターンが目減りする点にも注意が必要です。</p>
+        </section>
+
+        <!-- ベンチマークとトラッキングエラー -->
+        <section class="section" id="benchmark" aria-labelledby="sec-benchmark">
+          <h2 id="sec-benchmark" class="section__title">ベンチマークとトラッキングエラー</h2>
+          <p>ベンチマークとは、ファンドの運用成果を評価するための基準となる指数のことです。インデックスファンドでは、ベンチマークと同じ値動きを目指して運用されます。</p>
+          <p>トラッキングエラーとは、ファンドの値動きとベンチマークの値動きの差のことです。インデックスファンドでは、トラッキングエラーが小さいほど、ベンチマークに忠実に連動しているといえます。</p>
+
+          <div class="figure-block">
+            <p class="figure-block__title">トラッキングエラーが生じる理由</p>
+            <ul>
+              <li>運用コスト（信託報酬）がかかるため</li>
+              <li>指数の構成銘柄の変更に追従するタイムラグがあるため</li>
+              <li>現金保有や売買のタイミングによる影響があるため</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 配当 -->
+        <section class="section" id="dividends" aria-labelledby="sec-dividends">
+          <h2 id="sec-dividends" class="section__title">配当の基本</h2>
+          <p>配当とは、企業が利益の一部を株主に分配することです。投資信託では、保有する株式からの配当がファンドに蓄積され、分配金として投資家に支払われる場合があります。</p>
+          <p>分配金には以下の2つの種類があります。</p>
+          <ul>
+            <li>普通分配金: ファンドの運用益から支払われる分配金</li>
+            <li>特別分配金（元本払戻金）: 投資家の元本の一部を取り崩して支払われる分配金</li>
+          </ul>
+
+          <div class="callout callout--warning">
+            <p class="callout__title">分配金が多いほど良いわけではない</p>
+            <p>分配金は、ファンドの純資産から支払われます。分配金を受け取ると、その分だけ基準価額が下がります。特別分配金（元本払戻金）は、元本の一部を返してもらっているにすぎません。分配金の多さだけでファンドを評価しないよう注意しましょう。</p>
+          </div>
+        </section>
+
+        <!-- 積立投資とドルコスト平均法 -->
+        <section class="section" id="dca" aria-labelledby="sec-dca">
+          <h2 id="sec-dca" class="section__title">積立投資とドルコスト平均法</h2>
+          <p>積立投資とは、毎月一定額を継続的に投資する方法です。積立投資では、ドルコスト平均法という考え方が使われます。</p>
+          <p>ドルコスト平均法とは、毎回一定額を投資することで、価格が安いときには多く買い、価格が高いときには少なく買う方法です。結果として、平均購入単価を平準化する効果が期待できます。</p>
+
+          <div class="figure-block">
+            <p class="figure-block__title">ドルコスト平均法の計算例（仮定・試算）</p>
+            <p>毎月10,000円ずつ、3か月にわたって投資信託を購入する場合を考えます（仮定の例です）。</p>
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th scope="col">月</th>
+                  <th scope="col">基準価額</th>
+                  <th scope="col">購入金額</th>
+                  <th scope="col">購入量</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1か月目</td>
+                  <td>1,000円</td>
+                  <td>10,000円</td>
+                  <td>10口</td>
+                </tr>
+                <tr>
+                  <td>2か月目</td>
+                  <td>500円</td>
+                  <td>10,000円</td>
+                  <td>20口</td>
+                </tr>
+                <tr>
+                  <td>3か月目</td>
+                  <td>1,250円</td>
+                  <td>10,000円</td>
+                  <td>8口</td>
+                </tr>
+                <tr>
+                  <td>合計</td>
+                  <td>—</td>
+                  <td>30,000円</td>
+                  <td>38口</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>平均購入単価は、30,000円 ÷ 38口 ＝ 約789円となります。価格が下がった2か月目に多く買い、価格が上がった3か月目に少なく買ったことで、平均購入単価が平準化されました。</p>
+          </div>
+
+          <p>ただし、ドルコスト平均法は「必ず利益が出る」方法ではありません。価格が下がり続ければ、含み損を抱えることもあります。あくまで、購入タイミングを分散し、平均購入単価を平準化する手法のひとつです。</p>
+        </section>
+
+        <!-- よくある誤解 -->
+        <section class="section" aria-labelledby="sec-index-misconceptions">
+          <h2 id="sec-index-misconceptions" class="section__title">よくある誤解</h2>
+          <div class="accordion">
+            <div class="accordion__item">
+              <button class="accordion__trigger" aria-expanded="false" aria-controls="index-mis-1">
+                <span>「インデックスファンドは必ず儲かる」</span>
+                <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/>
+                </svg>
+              </button>
+              <div class="accordion__content" id="index-mis-1" hidden>
+                <p>インデックスファンドは市場平均並みのリターンを目指しますが、市場が下がればファンドの価値も下がります。元本保証はありません。</p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__trigger" aria-expanded="false" aria-controls="index-mis-2">
+                <span>「ドルコスト平均法をすれば必ず利益が出る」</span>
+                <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/>
+                </svg>
+              </button>
+              <div class="accordion__content" id="index-mis-2" hidden>
+                <p>ドルコスト平均法は平均購入単価を平準化する手法ですが、価格が下がり続ければ含み損を抱えることもあります。必ず利益が出る方法ではありません。</p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__trigger" aria-expanded="false" aria-controls="index-mis-3">
+                <span>「分配金が多いほど良いファンド」</span>
+                <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/>
+                </svg>
+              </button>
+              <div class="accordion__content" id="index-mis-3" hidden>
+                <p>分配金はファンドの純資産から支払われるため、分配金を受け取ると基準価額が下がります。分配金の多さだけでファンドを評価しないよう注意しましょう。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Quiz -->
+        <section class="quiz" data-quiz aria-labelledby="index-quiz-title">
+          <h2 id="index-quiz-title" class="quiz__title">理解度チェック</h2>
+
+          <div class="quiz__question" data-question data-answer="b">
+            <p class="quiz__question-text">Q1. 指数とは何ですか?</p>
+            <div class="quiz__options">
+              <div class="quiz__option" data-value="a" role="button" tabindex="0">a) 個別の株価のこと</div>
+              <div class="quiz__option" data-value="b" role="button" tabindex="0">b) 市場全体の値動きを示す指標</div>
+              <div class="quiz__option" data-value="c" role="button" tabindex="0">c) 投資信託の手数料のこと</div>
+            </div>
+            <div class="quiz__feedback" data-feedback-correct>正解です。指数は、市場全体の値動きを示す指標です。</div>
+            <div class="quiz__feedback" data-feedback-incorrect>不正解です。指数は、市場全体の値動きを示す指標です。</div>
+          </div>
+
+          <div class="quiz__question" data-question data-answer="a">
+            <p class="quiz__question-text">Q2. トラッキングエラーとは何ですか?</p>
+            <div class="quiz__options">
+              <div class="quiz__option" data-value="a" role="button" tabindex="0">a) 指数とファンドの値動きの差</div>
+              <div class="quiz__option" data-value="b" role="button" tabindex="0">b) 投資信託の購入手数料</div>
+              <div class="quiz__option" data-value="c" role="button" tabindex="0">c) 株価の変動率</div>
+            </div>
+            <div class="quiz__feedback" data-feedback-correct>正解です。トラッキングエラーは、ファンドの値動きとベンチマークの値動きの差のことです。</div>
+            <div class="quiz__feedback" data-feedback-incorrect>不正解です。トラッキングエラーは、ファンドの値動きとベンチマークの値動きの差のことです。</div>
+          </div>
+
+          <div class="quiz__question" data-question data-answer="c">
+            <p class="quiz__question-text">Q3. ドルコスト平均法の特徴として正しいものはどれですか?</p>
+            <div class="quiz__options">
+              <div class="quiz__option" data-value="a" role="button" tabindex="0">a) 価格が高いときに多く買う</div>
+              <div class="quiz__option" data-value="b" role="button" tabindex="0">b) 一度にまとめて投資する</div>
+              <div class="quiz__option" data-value="c" role="button" tabindex="0">c) 価格が下がったときに多く買う</div>
+            </div>
+            <div class="quiz__feedback" data-feedback-correct>正解です。ドルコスト平均法では、毎回一定額を投資することで、価格が安いときに多く買い、価格が高いときに少なく買います。</div>
+            <div class="quiz__feedback" data-feedback-incorrect>不正解です。ドルコスト平均法では、毎回一定額を投資することで、価格が安いときに多く買い、価格が高いときに少なく買います。</div>
+          </div>
+        </section>
+
+        <div class="read-check">
+          <input type="checkbox" id="read-check" class="read-check__checkbox">
+          <label for="read-check" id="read-check-label">このページを読了にする</label>
+        </div>
+
+        <section class="related-pages" aria-labelledby="index-related-title">
+          <h2 id="index-related-title" class="related-pages__title">関連ページ</h2>
+          <div class="card-grid card-grid--3">
+            <a href="orukan.html" class="card">
+              <span class="card__label">次のステップ</span>
+              <h3 class="card__title">オルカンとは</h3>
+              <p class="card__desc">全世界株式に分散投資するインデックスファンドを学びます。</p>
+            </a>
+            <a href="sp500.html" class="card">
+              <h3 class="card__title">S&amp;P 500とは</h3>
+              <p class="card__desc">米国の代表的な株価指数を学びます。</p>
+            </a>
+            <a href="nisa.html" class="card">
+              <h3 class="card__title">新しいNISA</h3>
+              <p class="card__desc">インデックスファンドを非課税で保有できる制度を学びます。</p>
+            </a>
+          </div>
+        </section>
+
+        <nav class="page-nav" aria-label="前後のページ">
+          <a href="listing.html" class="page-nav__link">
+            <span class="page-nav__direction">前のページ</span>
+            <span class="page-nav__title">02 上場とIPO</span>
+          </a>
+          <a href="orukan.html" class="page-nav__link page-nav__link--next">
+            <span class="page-nav__direction">次のページ</span>
+            <span class="page-nav__title">04 オルカンとは</span>
+          </a>
+        </nav>
+
+      </article>
+
+      <div class="disclaimer-footnote">
+        当サイトは投資教育を目的としており、特定の金融商品の購入や売却を推奨するものではありません。投資には元本割れのリスクがあります。投資判断はご自身の責任で行ってください。
+      </div>
+
+    </main>
+
+    <aside class="right-rail" aria-label="目次・キーワード">
+      <div class="right-rail__title">目次</div>
+      <a href="#what-is-index" class="right-rail__toc-link">指数とは</a>
+      <a href="#index-funds" class="right-rail__toc-link">インデックスファンドの仕組み</a>
+      <a href="#active-vs-index" class="right-rail__toc-link">アクティブファンドとの比較</a>
+      <a href="#benchmark" class="right-rail__toc-link">ベンチマークとトラッキングエラー</a>
+      <a href="#dividends" class="right-rail__toc-link">配当の基本</a>
+      <a href="#dca" class="right-rail__toc-link">積立投資とドルコスト平均法</a>
+
+      <div class="right-rail__terms">
+        <div class="right-rail__title">キーワード</div>
+        <div class="right-rail__term">
+          <div class="right-rail__term-name">指数（ベンチマーク）</div>
+          <div class="right-rail__term-def">市場全体の値動きを示す指標</div>
+        </div>
+        <div class="right-rail__term">
+          <div class="right-rail__term-name">インデックスファンド</div>
+          <div class="right-rail__term-def">指数の値動きに連動することを目指す投資信託</div>
+        </div>
+        <div class="right-rail__term">
+          <div class="right-rail__term-name">トラッキングエラー</div>
+          <div class="right-rail__term-def">ファンドとベンチマークの値動きの差</div>
+        </div>
+        <div class="right-rail__term">
+          <div class="right-rail__term-name">ドルコスト平均法</div>
+          <div class="right-rail__term-def">毎回一定額を投資し、平均購入単価を平準化する手法</div>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <p class="footer__disclaimer">当サイトは投資教育を目的としており、特定の金融商品を推奨するものではありません。投資には元本割れのリスクがあります。</p>
+      <nav class="footer__links" aria-label="フッターナビゲーション">
+        <a href="index.html" class="footer__link">ホーム</a>
+        <a href="guide.html" class="footer__link">学習ガイド</a>
+        <a href="glossary.html" class="footer__link">用語集</a>
+        <a href="simulator.html" class="footer__link">シミュレーター</a>
+        <a href="sources.html" class="footer__link">出典・免責</a>
+      </nav>
+      <p class="footer__copy">&copy; <span class="footer__year"></span> Invest Atlas</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/quiz.js" defer></script>
+  <script src="js/progress.js" defer></script>
+</body>
+</html>

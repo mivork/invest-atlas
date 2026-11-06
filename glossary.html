@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>用語集 — Invest Atlas</title>
+  <meta name="description" content="投資に関する主要な用語を検索・カテゴリ別に絞り込みできる用語集です。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="site">
+
+  <a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
+
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">Invest Atlas</a>
+      <nav class="header__nav" aria-label="グローバルナビゲーション">
+        <a href="guide.html" class="header__nav-link">学習ガイド</a>
+        <a href="glossary.html" class="header__nav-link">用語集</a>
+        <a href="simulator.html" class="header__nav-link">シミュレーター</a>
+        <a href="sources.html" class="header__nav-link">出典・免責</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="site__body site__body--no-rail">
+
+    <nav class="sidebar" aria-label="学習メニュー">
+      <div class="sidebar__section-title">学習コンテンツ</div>
+      <a href="basics.html" class="sidebar__link"><span class="sidebar__number">01</span>投資の基本</a>
+      <a href="listing.html" class="sidebar__link"><span class="sidebar__number">02</span>上場とIPO</a>
+      <a href="index-investing.html" class="sidebar__link"><span class="sidebar__number">03</span>指数と投資信託</a>
+
+      <a href="orukan.html" class="sidebar__link"><span class="sidebar__number">04</span>オルカンとは</a>
+      <a href="sp500.html" class="sidebar__link"><span class="sidebar__number">05</span>S&amp;P 500とは</a>
+      <a href="compare.html" class="sidebar__link"><span class="sidebar__number">06</span>オルカン vs S&amp;P 500</a>
+      <a href="nisa.html" class="sidebar__link"><span class="sidebar__number">07</span>新しいNISA</a>
+      <a href="products.html" class="sidebar__link"><span class="sidebar__number">08</span>金融商品を知る</a>
+      <a href="individual-stocks.html" class="sidebar__link"><span class="sidebar__number">09</span>個別株投資</a>
+      <a href="risk.html" class="sidebar__link"><span class="sidebar__number">10</span>リスクと分散</a>
+      <a href="costs-taxes.html" class="sidebar__link"><span class="sidebar__number">11</span>コストと税金</a>
+      <a href="advanced.html" class="sidebar__link"><span class="sidebar__number">12</span>上級編</a>
+      <div class="sidebar__section-title">ツール・資料</div>
+      <a href="guide.html" class="sidebar__link">学習ガイド</a>
+      <a href="glossary.html" class="sidebar__link">用語集</a>
+      <a href="simulator.html" class="sidebar__link">シミュレーター</a>
+      <a href="sources.html" class="sidebar__link">出典・免責</a>
+    </nav>
+
+    <main id="main-content" class="main main--full">
+
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <a href="index.html" class="breadcrumb__link">ホーム</a>
+        <span class="breadcrumb__separator" aria-hidden="true">/</span>
+        <span class="breadcrumb__current">用語集</span>
+      </nav>
+
+      <h1 class="h1">用語集</h1>
+
+      <div class="glossary">
+
+        <div class="glossary__controls">
+          <div class="glossary__search-wrap">
+            <label for="glossary-search" class="glossary__search-label">用語を検索</label>
+            <input type="search" id="glossary-search" class="glossary__search" placeholder="キーワードを入力…" autocomplete="off">
+
+          </div>
+          <div class="glossary__select-wrap">
+            <label for="glossary-category" class="glossary__select-label">カテゴリで絞り込み</label>
+            <select id="glossary-category" class="glossary__select">
+              <option value="">すべて</option>
+              <option value="基本">基本</option>
+              <option value="株式">株式</option>
+              <option value="投資信託">投資信託</option>
+              <option value="債券">債券</option>
+              <option value="指標">指標</option>
+              <option value="税制">税制</option>
+              <option value="リスク">リスク</option>
+              <option value="理論">理論</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="glossary__count" id="glossary-count" aria-live="polite"></div>
+
+        <div class="glossary__items" id="glossary-items">
+
+          <!-- 基本 -->
+          <div class="glossary__item" data-term="投資" data-reading="とうし" data-definition="資金を金融商品などに投じ、将来の利益を期待する行為" data-category="基本">
+            <h2 class="glossary__term">投資（とうし）</h2>
+            <p class="glossary__definition">資金を株式・債券・投資信託などの金融商品に投じ、将来の値上がり益や配当・利子などの利益を期待する行為。</p>
+            <span class="glossary__category">基本</span>
+          </div>
+
+          <div class="glossary__item" data-term="投機" data-reading="とうき" data-definition="短期的な価格変動から利益を得ようとする行為" data-category="基本">
+            <h2 class="glossary__term">投機（とうき）</h2>
+            <p class="glossary__definition">短期的な価格変動から利益を得ようとする行為。投資に比べてリスクが高く、投機的な取引はギャンブルに近い性質を持つ場合がある。</p>
+            <span class="glossary__category">基本</span>
+
+          </div>
+
+          <div class="glossary__item" data-term="リターン" data-reading="りたーん" data-definition="投資から得られる利益や損失のこと" data-category="基本">
+            <h2 class="glossary__term">リターン</h2>
+            <p class="glossary__definition">投資から得られる利益や損失のこと。値上がり益（キャピタルゲイン）と配当・利子（インカムゲイン）を含む。</p>
+            <span class="glossary__category">基本</span>
+          </div>
+
+          <div class="glossary__item" data-term="リスク" data-reading="りすく" data-definition="投資においてはリターンの不確実性（ばらつき）を意味する" data-category="リスク">
+            <h2 class="glossary__term">リスク</h2>
+            <p class="glossary__definition">投資の世界では「危険」ではなく「リターンの不確実性（ばらつき）」を意味する。リスクが高いとは、リターンが大きく上振れする可能性も大きく下振れする可能性もあるということ。</p>
+            <span class="glossary__category">リスク</span>
+          </div>
+
+          <div class="glossary__item" data-term="複利" data-reading="ふくり" data-definition="元本に利益を加えた額に対して新たに利益が発生する仕組み" data-category="基本">
+            <h2 class="glossary__term">複利（ふくり）</h2>
+            <p class="glossary__definition">元本だけでなく、それまでに得た利益にも新たに利益が発生する仕組み。「利子が利子を生む」効果により、長期間では単利よりも大きな成長が期待できる。</p>
+            <span class="glossary__category">基本</span>
+          </div>
+
+          <div class="glossary__item" data-term="分散投資" data-reading="ぶんさんとうし" data-definition="投資先を複数に分けてリスクを軽減する手法" data-category="リスク">
+            <h2 class="glossary__term">分散投資（ぶんさんとうし）</h2>
+            <p class="glossary__definition">投資先を複数の資産・銘柄・地域・時間に分けることで、特定のリスク要因の影響を軽減しようとする考え方。</p>
+            <span class="glossary__category">リスク</span>
+          </div>
+
+          <div class="glossary__item" data-term="ポートフォリオ" data-reading="ぽーとふぉりお" data-definition="投資家が保有する金融資産の組み合わせ全体" data-category="リスク">
+            <h2 class="glossary__term">ポートフォリオ</h2>
+            <p class="glossary__definition">投資家が保有する金融資産の組み合わせ全体。どの資産にどのくらいの割合で投資するか（資産配分）がリターンに大きく影響する。</p>
+            <span class="glossary__category">リスク</span>
+          </div>
+
+
+          <div class="glossary__item" data-term="アセットアロケーション" data-reading="あせっとあろけーしょん" data-definition="資産をどの資産クラスにどの割合で配分するかの決定" data-category="リスク">
+            <h2 class="glossary__term">アセットアロケーション</h2>
+            <p class="glossary__definition">資産をどの資産クラス（株式・債券・不動産・現金など）にどの割合で配分するかの決定。投資成果を左右する最も重要な要素のひとつとされる。</p>
+            <span class="glossary__category">リスク</span>
+          </div>
+
+          <!-- 株式 -->
+          <div class="glossary__item" data-term="株式" data-reading="かぶしき" data-definition="企業が資金調達のために発行する有価証券" data-category="株式">
+            <h2 class="glossary__term">株式（かぶしき）</h2>
+            <p class="glossary__definition">企業が資金調達のために発行する有価証券。株式を保有することで、配当を受け取る権利や株主総会で議決する権利を得る。</p>
+            <span class="glossary__category">株式</span>
+          </div>
+
+          <div class="glossary__item" data-term="上場" data-reading="じょうじょう" data-definition="企業の株式を証券取引所で売買できるようにすること" data-category="株式">
+            <h2 class="glossary__term">上場（じょうじょう）</h2>
+            <p class="glossary__definition">企業の株式を証券取引所で売買できるようにすること。上場することで、不特定多数の投資家が株式を取引できるようになる。</p>
+            <span class="glossary__category">株式</span>
+          </div>
+
+          <div class="glossary__item" data-term="IPO" data-reading="あいぴーおー" data-definition="新規株式公開。企業が初めて株式を証券取引所に上場すること" data-category="株式">
+            <h2 class="glossary__term">IPO（あいぴーおー）</h2>
+            <p class="glossary__definition">Initial Public Offeringの略。新規株式公開。企業が初めて株式を証券取引所に上場し、一般の投資家に株式を販売すること。</p>
+            <span class="glossary__category">株式</span>
+          </div>
+
+          <div class="glossary__item" data-term="配当金" data-reading="はいとうきん" data-definition="企業が利益の一部を株主に分配するお金" data-category="株式">
+            <h2 class="glossary__term">配当金（はいとうきん）</h2>
+            <p class="glossary__definition">企業が利益の一部を株主に分配するお金。すべての企業が配当を出すわけではなく、業績によって増減したり無配になったりする。</p>
+            <span class="glossary__category">株式</span>
+          </div>
+
+          <div class="glossary__item" data-term="PER" data-reading="ぴーいーあーる" data-definition="株価収益率。株価がEPSの何倍かを示す指標" data-category="指標">
+
+            <h2 class="glossary__term">PER（株価収益率）</h2>
+            <p class="glossary__definition">Price Earnings Ratioの略。株価を1株あたり当期純利益（EPS）で割った値。株価が利益の何倍で取引されているかを示す。</p>
+            <span class="glossary__category">指標</span>
+          </div>
+
+          <div class="glossary__item" data-term="PBR" data-reading="ぴーびーあーる" data-definition="株価純資産倍率。株価がBPSの何倍かを示す指標" data-category="指標">
+            <h2 class="glossary__term">PBR（株価純資産倍率）</h2>
+            <p class="glossary__definition">Price Book-value Ratioの略。株価を1株あたり純資産（BPS）で割った値。1倍を下回ると理論上は解散価値を下回る。</p>
+            <span class="glossary__category">指標</span>
+          </div>
+
+          <div class="glossary__item" data-term="EPS" data-reading="いーぴーえす" data-definition="1株あたり当期純利益" data-category="指標">
+            <h2 class="glossary__term">EPS（1株あたり当期純利益）</h2>
+            <p class="glossary__definition">Earnings Per Shareの略。企業の当期純利益を発行済み株式数で割った値。企業の収益力を1株単位で比較する指標。</p>
+            <span class="glossary__category">指標</span>
+          </div>
+
+          <div class="glossary__item" data-term="配当利回り" data-reading="はいとうりまわり" data-definition="株価に対する年間配当金の割合" data-category="指標">
+            <h2 class="glossary__term">配当利回り（はいとうりまわり）</h2>
+            <p class="glossary__definition">年間配当金を株価で割ったもの。株価に対してどのくらいの配当が得られるかを示す。</p>
+            <span class="glossary__category">指標</span>
+          </div>
+
+          <!-- 投資信託 -->
+          <div class="glossary__item" data-term="投資信託" data-reading="とうししんたく" data-definition="多くの投資家から資金を集め、専門家が運用する金融商品" data-category="投資信託">
+            <h2 class="glossary__term">投資信託（とうししんたく）</h2>
+            <p class="glossary__definition">多くの投資家から集めた資金をひとつにまとめ、運用の専門家が株式や債券などに分散投資する金融商品。ファンドとも呼ばれる。</p>
+            <span class="glossary__category">投資信託</span>
+          </div>
+
+          <div class="glossary__item" data-term="ETF" data-reading="いーてぃーえふ" data-definition="証券取引所に上場している投資信託" data-category="投資信託">
+            <h2 class="glossary__term">ETF</h2>
+
+            <p class="glossary__definition">Exchange Traded Fundの略。上場投資信託。証券取引所に上場しており、株式と同じようにリアルタイムで売買できる投資信託。</p>
+            <span class="glossary__category">投資信託</span>
+          </div>
+
+          <div class="glossary__item" data-term="インデックスファンド" data-reading="いんでっくすふぁんど" data-definition="特定の株価指数に連動する運用成果を目指す投資信託" data-category="投資信託">
+            <h2 class="glossary__term">インデックスファンド</h2>
+            <p class="glossary__definition">特定の株価指数（インデックス）に連動する運用成果を目指す投資信託。アクティブファンドに比べて信託報酬が低い傾向がある。</p>
+            <span class="glossary__category">投資信託</span>
+          </div>
+
+          <div class="glossary__item" data-term="アクティブファンド" data-reading="あくてぃぶふぁんど" data-definition="市場平均を上回る運用成果を目指す投資信託" data-category="投資信託">
+            <h2 class="glossary__term">アクティブファンド</h2>
+            <p class="glossary__definition">ファンドマネージャーが銘柄を選定し、市場平均（ベンチマーク）を上回る運用成果を目指す投資信託。インデックスファンドより信託報酬が高い傾向がある。</p>
+            <span class="glossary__category">投資信託</span>
+          </div>
+
+          <div class="glossary__item" data-term="基準価額" data-reading="きじゅんかがく" data-definition="投資信託の1口あたりの値段" data-category="投資信託">
+            <h2 class="glossary__term">基準価額（きじゅんかがく）</h2>
+            <p class="glossary__definition">投資信託の1口あたりの値段。ファンドの純資産総額を総口数で割って算出される。1日1回計算される。</p>
+            <span class="glossary__category">投資信託</span>
+          </div>
+
+          <div class="glossary__item" data-term="信託報酬" data-reading="しんたくほうしゅう" data-definition="投資信託の運用管理にかかる継続的な費用" data-category="投資信託">
+            <h2 class="glossary__term">信託報酬（しんたくほうしゅう）</h2>
+            <p class="glossary__definition">投資信託の運用・管理にかかる費用。年率で表示されるが、実際には日割りでファンドの純資産から差し引かれる。運用管理費用とも呼ばれる。</p>
+            <span class="glossary__category">投資信託</span>
+          </div>
+
+          <div class="glossary__item" data-term="分配金" data-reading="ぶんぱいきん" data-definition="投資信託が投資家に支払う収益金" data-category="投資信託">
+            <h2 class="glossary__term">分配金（ぶんぱいきん）</h2>
+            <p class="glossary__definition">投資信託が投資家に支払う収益金。運用益からだけでなく、元本を取り崩して支払われる場合もある（元本払戻金）。</p>
+            <span class="glossary__category">投資信託</span>
+
+          </div>
+
+          <div class="glossary__item" data-term="ノーロード" data-reading="のーろーど" data-definition="購入時手数料がかからない投資信託" data-category="投資信託">
+            <h2 class="glossary__term">ノーロード</h2>
+            <p class="glossary__definition">購入時手数料（販売手数料）がかからない投資信託のこと。インデックスファンドにはノーロードの商品が多い。</p>
+            <span class="glossary__category">投資信託</span>
+          </div>
+
+          <div class="glossary__item" data-term="株価指数" data-reading="かぶかしすう" data-definition="市場全体や特定グループの株価動向を示す指標" data-category="投資信託">
+            <h2 class="glossary__term">株価指数（かぶかしすう）</h2>
+            <p class="glossary__definition">市場全体や特定のグループの株価の動きをまとめて示す数値。日経平均、TOPIX、S&amp;P 500、MSCI ACWIなどがある。</p>
+            <span class="glossary__category">投資信託</span>
+          </div>
+
+          <div class="glossary__item" data-term="オルカン" data-reading="おるかん" data-definition="全世界株式インデックスファンドの通称" data-category="投資信託">
+            <h2 class="glossary__term">オルカン</h2>
+            <p class="glossary__definition">「オール・カントリー」の略。全世界株式インデックスファンドの通称。MSCI ACWIなどの全世界株式指数に連動する投資信託を指すことが多い。</p>
+            <span class="glossary__category">投資信託</span>
+          </div>
+
+          <div class="glossary__item" data-term="時価総額加重型" data-reading="じかそうがくかじゅうがた" data-definition="各銘柄の時価総額に応じた割合で構成する方式" data-category="投資信託">
+            <h2 class="glossary__term">時価総額加重型（じかそうがくかじゅうがた）</h2>
+            <p class="glossary__definition">株価指数の算出方法の一つ。各銘柄の時価総額（株価×発行済み株式数）に応じた割合で構成する。S&amp;P 500やMSCI ACWIが採用。</p>
+            <span class="glossary__category">投資信託</span>
+          </div>
+
+          <div class="glossary__item" data-term="ドルコスト平均法" data-reading="どるこすとへいきんほう" data-definition="定額を定期的に投資する手法" data-category="投資信託">
+            <h2 class="glossary__term">ドルコスト平均法</h2>
+            <p class="glossary__definition">一定の金額を定期的に投資する手法。価格が高い時は少なく、安い時は多く購入するため、平均購入単価を平準化する効果がある。万能な手法ではない。</p>
+            <span class="glossary__category">投資信託</span>
+          </div>
+
+
+          <!-- 債券 -->
+          <div class="glossary__item" data-term="債券" data-reading="さいけん" data-definition="国や企業が資金を借り入れるために発行する有価証券" data-category="債券">
+            <h2 class="glossary__term">債券（さいけん）</h2>
+            <p class="glossary__definition">国や企業が資金を借り入れるために発行する有価証券。投資家は利子を受け取り、満期には元本が返済される。</p>
+            <span class="glossary__category">債券</span>
+          </div>
+
+          <div class="glossary__item" data-term="クーポン" data-reading="くーぽん" data-definition="債券の保有者に定期的に支払われる利子" data-category="債券">
+            <h2 class="glossary__term">クーポン</h2>
+            <p class="glossary__definition">債券の保有者に定期的に支払われる利子。固定利付債では発行時に決められた利率で支払われる。</p>
+            <span class="glossary__category">債券</span>
+          </div>
+
+          <div class="glossary__item" data-term="利回り" data-reading="りまわり" data-definition="投資金額に対する収益の割合" data-category="債券">
+            <h2 class="glossary__term">利回り（りまわり）</h2>
+            <p class="glossary__definition">投資金額に対する収益（利子＋値上がり/値下がり益）の割合。債券では「最終利回り」が重要な指標となる。</p>
+            <span class="glossary__category">債券</span>
+          </div>
+
+          <!-- リスク -->
+          <div class="glossary__item" data-term="価格変動リスク" data-reading="かかくへんどうりすく" data-definition="株価や基準価額が変動するリスク" data-category="リスク">
+            <h2 class="glossary__term">価格変動リスク</h2>
+            <p class="glossary__definition">株価や投資信託の基準価額が変動するリスク。市場の需給、経済環境、企業業績などにより変動する。</p>
+            <span class="glossary__category">リスク</span>
+          </div>
+
+          <div class="glossary__item" data-term="為替リスク" data-reading="かわせりすく" data-definition="為替レートの変動で円換算の資産価値が変わるリスク" data-category="リスク">
+            <h2 class="glossary__term">為替リスク</h2>
+            <p class="glossary__definition">為替レートの変動により、外国資産の円換算価値が変わるリスク。円高になると外国資産の円換算額は減少する。</p>
+            <span class="glossary__category">リスク</span>
+          </div>
+
+
+          <div class="glossary__item" data-term="信用リスク" data-reading="しんようりすく" data-definition="発行体が利払いや元本返済をできなくなるリスク" data-category="リスク">
+            <h2 class="glossary__term">信用リスク</h2>
+            <p class="glossary__definition">債券の発行体が利払いや元本返済をできなくなるリスク。デフォルトリスクとも呼ばれる。</p>
+            <span class="glossary__category">リスク</span>
+          </div>
+
+          <div class="glossary__item" data-term="流動性リスク" data-reading="りゅうどうせいりすく" data-definition="売りたいときに適正な価格で売れないリスク" data-category="リスク">
+            <h2 class="glossary__term">流動性リスク</h2>
+            <p class="glossary__definition">売りたいときに適正な価格で速やかに売却できないリスク。取引量の少ない銘柄や市場で起きやすい。</p>
+            <span class="glossary__category">リスク</span>
+          </div>
+
+          <div class="glossary__item" data-term="システマティックリスク" data-reading="しすてまてぃっくりすく" data-definition="市場全体に影響するリスク。分散投資で排除できない" data-category="リスク">
+            <h2 class="glossary__term">システマティックリスク</h2>
+            <p class="glossary__definition">市場全体に影響するリスク（市場リスク）。景気後退や金融危機など。分散投資では排除できない。</p>
+            <span class="glossary__category">リスク</span>
+          </div>
+
+          <div class="glossary__item" data-term="リスク許容度" data-reading="りすくきょようど" data-definition="投資家がどの程度の損失や価格変動を受け入れられるかの度合い" data-category="リスク">
+            <h2 class="glossary__term">リスク許容度</h2>
+            <p class="glossary__definition">投資家がどの程度の損失や価格変動を受け入れられるかの度合い。年齢、収入、投資期間、心理的な耐性などに影響される。</p>
+            <span class="glossary__category">リスク</span>
+          </div>
+
+          <!-- 税制 -->
+          <div class="glossary__item" data-term="NISA" data-reading="にーさ" data-definition="少額投資非課税制度。投資の利益が非課税になる制度" data-category="税制">
+            <h2 class="glossary__term">NISA</h2>
+            <p class="glossary__definition">少額投資非課税制度。投資から得られる利益（配当金・分配金・売却益）が非課税になる税制優遇制度。2024年から新しいNISAが開始。</p>
+            <span class="glossary__category">税制</span>
+          </div>
+
+          <div class="glossary__item" data-term="特定口座" data-reading="とくていこうざ" data-definition="証券会社が損益計算や税金の徴収を行う口座" data-category="税制">
+
+            <h2 class="glossary__term">特定口座（とくていこうざ）</h2>
+            <p class="glossary__definition">証券会社が年間の損益を計算してくれる口座。「源泉徴収あり」なら税金も自動徴収され、原則として確定申告不要。</p>
+            <span class="glossary__category">税制</span>
+          </div>
+
+          <div class="glossary__item" data-term="損益通算" data-reading="そんえきつうさん" data-definition="利益と損失を相殺して課税額を減らす仕組み" data-category="税制">
+            <h2 class="glossary__term">損益通算（そんえきつうさん）</h2>
+            <p class="glossary__definition">課税口座において、ある銘柄の売却損と別の銘柄の売却益を相殺して課税額を減らす仕組み。NISA口座の損失は損益通算の対象外。</p>
+            <span class="glossary__category">税制</span>
+          </div>
+
+          <div class="glossary__item" data-term="繰越控除" data-reading="くりこしこうじょ" data-definition="損益通算で控除しきれない損失を最大3年間繰り越す制度" data-category="税制">
+            <h2 class="glossary__term">繰越控除（くりこしこうじょ）</h2>
+            <p class="glossary__definition">損益通算をしても控除しきれない損失がある場合、確定申告をすることで最大3年間にわたって翌年以降の利益から差し引ける制度。</p>
+            <span class="glossary__category">税制</span>
+          </div>
+
+          <!-- 理論 -->
+          <div class="glossary__item" data-term="現代ポートフォリオ理論" data-reading="げんだいぽーとふぉりおりろん" data-definition="資産間の相関を考慮し効率的にリスクを低減する理論" data-category="理論">
+            <h2 class="glossary__term">現代ポートフォリオ理論（MPT）</h2>
+            <p class="glossary__definition">ハリー・マーコウィッツが提唱した理論。資産間の相関関係を考慮することで、同じリターンでもリスクを効率的に低減できるポートフォリオを構築できるとする。</p>
+            <span class="glossary__category">理論</span>
+          </div>
+
+          <div class="glossary__item" data-term="効率的フロンティア" data-reading="こうりつてきふろんてぃあ" data-definition="同リスクで最大リターンとなるポートフォリオの曲線" data-category="理論">
+            <h2 class="glossary__term">効率的フロンティア</h2>
+            <p class="glossary__definition">与えられたリスク水準で最大のリターンが期待できるポートフォリオの組み合わせを結んだ曲線。この曲線上が「効率的」な組み合わせ。</p>
+            <span class="glossary__category">理論</span>
+          </div>
+
+          <div class="glossary__item" data-term="シャープレシオ" data-reading="しゃーぷれしお" data-definition="リスク1単位あたりの超過リターンを示す指標" data-category="理論">
+            <h2 class="glossary__term">シャープレシオ</h2>
+
+            <p class="glossary__definition">リスク（標準偏差）1単位あたりの超過リターン（リスクフリーレートを超える分）を示す指標。値が高いほどリスクに対して効率的にリターンを得ている。</p>
+            <span class="glossary__category">理論</span>
+          </div>
+
+          <div class="glossary__item" data-term="相関係数" data-reading="そうかんけいすう" data-definition="2つの資産の値動きの関連性を-1から+1で示す指標" data-category="理論">
+            <h2 class="glossary__term">相関係数（そうかんけいすう）</h2>
+            <p class="glossary__definition">2つの資産の値動きの関連性を-1から+1の範囲で示す指標。-1は完全に逆方向、0は無関連、+1は完全に同方向の動き。</p>
+            <span class="glossary__category">理論</span>
+          </div>
+
+          <!-- 基本（追加） -->
+          <div class="glossary__item" data-term="キャピタルゲイン" data-reading="きゃぴたるげいん" data-definition="資産の売却によって得られる利益" data-category="基本">
+            <h2 class="glossary__term">キャピタルゲイン</h2>
+            <p class="glossary__definition">資産の売却によって得られる利益（値上がり益）。購入価格と売却価格の差額。逆に損失が出た場合はキャピタルロスと呼ぶ。</p>
+            <span class="glossary__category">基本</span>
+          </div>
+
+          <div class="glossary__item" data-term="インカムゲイン" data-reading="いんかむげいん" data-definition="資産を保有することで得られる収益" data-category="基本">
+            <h2 class="glossary__term">インカムゲイン</h2>
+            <p class="glossary__definition">資産を保有することで定期的に得られる収益。株式の配当金、債券の利子、投資信託の分配金など。</p>
+            <span class="glossary__category">基本</span>
+          </div>
+
+          <div class="glossary__item" data-term="生活防衛資金" data-reading="せいかつぼうえいしきん" data-definition="生活費の数ヶ月分をすぐに使える形で確保した資金" data-category="基本">
+            <h2 class="glossary__term">生活防衛資金（せいかつぼうえいしきん）</h2>
+            <p class="glossary__definition">生活費の数ヶ月分（一般的に3〜6ヶ月分）を普通預金などのすぐに使える形で確保した資金。投資に回すべきではない。</p>
+            <span class="glossary__category">基本</span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="disclaimer-footnote">
+        当サイトは投資教育を目的としており、特定の金融商品の購入や売却を推奨するものではありません。投資には元本割れのリスクがあります。投資判断はご自身の責任で行ってください。
+      </div>
+
+    </main>
+
+  </div>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <p class="footer__disclaimer">当サイトは投資教育を目的としており、特定の金融商品を推奨するものではありません。投資には元本割れのリスクがあります。</p>
+      <nav class="footer__links" aria-label="フッターナビゲーション">
+        <a href="index.html" class="footer__link">ホーム</a>
+        <a href="guide.html" class="footer__link">学習ガイド</a>
+        <a href="glossary.html" class="footer__link">用語集</a>
+        <a href="simulator.html" class="footer__link">シミュレーター</a>
+        <a href="sources.html" class="footer__link">出典・免責</a>
+      </nav>
+      <p class="footer__copy">&copy; <span class="footer__year"></span> Invest Atlas</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/glossary.js" defer></script>
+</body>
+</html>

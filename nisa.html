@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新しいNISA — Invest Atlas</title>
+  <meta name="description" content="2024年から始まった新しいNISA制度の仕組み、つみたて投資枠・成長投資枠の違い、非課税保有限度額、注意点を解説します。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="site">
+
+  <a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
+
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">Invest Atlas</a>
+      <nav class="header__nav" aria-label="グローバルナビゲーション">
+        <a href="guide.html" class="header__nav-link">学習ガイド</a>
+        <a href="glossary.html" class="header__nav-link">用語集</a>
+        <a href="simulator.html" class="header__nav-link">シミュレーター</a>
+        <a href="sources.html" class="header__nav-link">出典・免責</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="site__body">
+
+    <nav class="sidebar" aria-label="学習メニュー">
+      <div class="sidebar__section-title">学習コンテンツ</div>
+      <a href="basics.html" class="sidebar__link"><span class="sidebar__number">01</span>投資の基本</a>
+      <a href="listing.html" class="sidebar__link"><span class="sidebar__number">02</span>上場とIPO</a>
+      <a href="index-investing.html" class="sidebar__link"><span class="sidebar__number">03</span>指数と投資信託</a>
+
+      <a href="orukan.html" class="sidebar__link"><span class="sidebar__number">04</span>オルカンとは</a>
+      <a href="sp500.html" class="sidebar__link"><span class="sidebar__number">05</span>S&amp;P 500とは</a>
+      <a href="compare.html" class="sidebar__link"><span class="sidebar__number">06</span>オルカン vs S&amp;P 500</a>
+      <a href="nisa.html" class="sidebar__link"><span class="sidebar__number">07</span>新しいNISA</a>
+      <a href="products.html" class="sidebar__link"><span class="sidebar__number">08</span>金融商品を知る</a>
+      <a href="individual-stocks.html" class="sidebar__link"><span class="sidebar__number">09</span>個別株投資</a>
+      <a href="risk.html" class="sidebar__link"><span class="sidebar__number">10</span>リスクと分散</a>
+      <a href="costs-taxes.html" class="sidebar__link"><span class="sidebar__number">11</span>コストと税金</a>
+      <a href="advanced.html" class="sidebar__link"><span class="sidebar__number">12</span>上級編</a>
+      <div class="sidebar__section-title">ツール・資料</div>
+      <a href="guide.html" class="sidebar__link">学習ガイド</a>
+      <a href="glossary.html" class="sidebar__link">用語集</a>
+      <a href="simulator.html" class="sidebar__link">シミュレーター</a>
+      <a href="sources.html" class="sidebar__link">出典・免責</a>
+    </nav>
+
+    <main id="main-content" class="main">
+
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <a href="index.html" class="breadcrumb__link">ホーム</a>
+        <span class="breadcrumb__separator" aria-hidden="true">/</span>
+        <span class="breadcrumb__current">新しいNISA</span>
+      </nav>
+
+      <span class="level-badge level-badge--beginner">初級</span>
+      <span class="level-badge level-badge--intermediate">中級</span>
+
+      <article>
+        <h1 class="h1">新しいNISA</h1>
+
+        <div class="lead-box">
+          <p class="lead-box__title">このページで学ぶこと</p>
+
+          <ul class="lead-box__list">
+            <li>NISAとは何か</li>
+            <li>新しいNISAの2つの投資枠</li>
+            <li>年間投資枠と非課税保有限度額</li>
+            <li>非課税期間と枠の再利用</li>
+            <li>NISAの注意点と今後の変更予定</li>
+          </ul>
+        </div>
+
+        <!-- NISAとは -->
+        <section class="section" id="what-is-nisa" aria-labelledby="sec-nisa">
+          <h2 id="sec-nisa" class="section__title">NISAとは</h2>
+          <p>NISA（少額投資非課税制度）は、投資から得られる利益（配当金・分配金・売却益）が非課税になる日本の税制優遇制度です。通常、投資の利益には約20%の税金がかかりますが、NISA口座で投資した分については、この税金がかかりません。</p>
+          <p>NISAは金融庁が所管する制度で、2024年1月から大幅に拡充された「新しいNISA」が開始されました。</p>
+        </section>
+
+        <!-- 2つの投資枠 -->
+        <section class="section" id="two-frames" aria-labelledby="sec-frames">
+          <h2 id="sec-frames" class="section__title">2つの投資枠</h2>
+          <p>新しいNISAには、「つみたて投資枠」と「成長投資枠」の2つの投資枠があります。これらは併用が可能です。</p>
+
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th scope="col">項目</th>
+                <th scope="col">つみたて投資枠</th>
+                <th scope="col">成長投資枠</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>年間投資枠</td>
+
+                <td>120万円</td>
+                <td>240万円</td>
+              </tr>
+              <tr>
+                <td>対象商品</td>
+                <td>金融庁の基準を満たした投資信託・ETF</td>
+                <td>上場株式・投資信託・ETF など（一部除外あり）</td>
+              </tr>
+              <tr>
+                <td>購入方法</td>
+                <td>積立投資のみ</td>
+                <td>一括購入・積立投資いずれも可</td>
+              </tr>
+              <tr>
+                <td>非課税期間</td>
+                <td>無期限</td>
+                <td>無期限</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>2つの枠を合わせた年間投資枠の合計は360万円です。</p>
+        </section>
+
+        <!-- 非課税保有限度額 -->
+        <section class="section" id="lifetime-limit" aria-labelledby="sec-limit">
+          <h2 id="sec-limit" class="section__title">非課税保有限度額</h2>
+          <p>新しいNISAでは、生涯を通じた非課税保有限度額（総枠）が1,800万円に設定されています。このうち、成長投資枠で使える上限は1,200万円です。</p>
+
+          <div class="figure-block">
+            <p>非課税保有限度額（生涯）: 1,800万円</p>
+            <p>うち成長投資枠の上限: 1,200万円</p>
+
+            <p>つみたて投資枠のみで1,800万円すべてを使うことも可能</p>
+            <p class="figure-block__caption">非課税保有限度額は「簿価残高方式」で管理されます（取得価額ベース）。</p>
+          </div>
+
+          <h3 class="section__subtitle">簿価残高方式とは</h3>
+          <p>非課税保有限度額の計算は、購入時の取得価額（簿価）で管理されます。つまり、保有している商品の現在の時価ではなく、いくらで買ったかが基準になります。</p>
+        </section>
+
+        <!-- 枠の再利用 -->
+        <section class="section" id="reuse" aria-labelledby="sec-reuse">
+          <h2 id="sec-reuse" class="section__title">売却による枠の再利用</h2>
+          <p>新しいNISAでは、保有している商品を売却すると、その商品の取得価額（簿価）分の非課税保有限度額が翌年以降に再利用できます。</p>
+          <p>ただし、年間投資枠（つみたて投資枠120万円、成長投資枠240万円）は翌年にならないとリセットされません。年の途中で売却しても、その年の年間投資枠は増えません。</p>
+
+          <div class="callout callout--info">
+            <p class="callout__title">枠の再利用の例</p>
+            <p>取得価額100万円の投資信託を売却した場合、翌年以降にその100万円分の非課税保有限度額が空きます。ただし、年間投資枠の範囲内でしか新たに投資できない点に注意が必要です。</p>
+          </div>
+        </section>
+
+        <!-- 対象年齢と口座開設 -->
+        <section class="section" id="eligibility" aria-labelledby="sec-eligibility">
+          <h2 id="sec-eligibility" class="section__title">対象年齢と口座開設</h2>
+          <p>新しいNISA口座を開設できるのは、日本国内に住む18歳以上の個人です（その年の1月1日時点の年齢）。1人1口座のみ開設でき、金融機関は年単位で変更可能です。</p>
+
+          <div class="callout callout--future">
+            <p class="callout__title">将来の変更予定: 0〜17歳へのつみたて投資枠の開放</p>
+            <p>2027年1月より、0〜17歳の未成年者にもNISAのつみたて投資枠が開放される予定です。この変更は、本ページ最終確認時点（2026年11月7日）で公表されている情報に基づいています。制度の詳細や施行時期は変更される可能性があります。最新の情報は金融庁の公式サイトでご確認ください。</p>
+          </div>
+        </section>
+
+        <!-- NISAの注意点 -->
+
+        <section class="section" id="nisa-cautions" aria-labelledby="sec-cautions">
+          <h2 id="sec-cautions" class="section__title">NISAの注意点</h2>
+          <ul>
+            <li>NISA口座での損失は、他の口座（特定口座・一般口座）の利益と損益通算できない</li>
+            <li>損失の繰越控除（3年間）もNISA口座では利用できない</li>
+            <li>非課税のメリットがあるのは利益が出た場合のみ。損失が出た場合、通常の課税口座よりも税制上不利になる可能性がある</li>
+            <li>つみたて投資枠で購入できるのは、金融庁の基準を満たした商品に限られる</li>
+            <li>金融機関によって取扱商品が異なる</li>
+            <li>制度は法令改正により変更される可能性がある</li>
+          </ul>
+
+          <div class="callout callout--warning">
+            <p class="callout__title">損益通算ができないことの意味</p>
+            <p>通常の課税口座では、ある銘柄の売却損を別の銘柄の売却益と相殺できます（損益通算）。しかしNISA口座で発生した損失は、課税口座の利益と相殺できません。つまり、NISA口座で損失が確定した場合、その損失を税制上活用できないことになります。</p>
+          </div>
+        </section>
+
+        <!-- 制度のまとめ -->
+        <section class="section" id="nisa-summary" aria-labelledby="sec-summary">
+          <h2 id="sec-summary" class="section__title">新しいNISAのまとめ</h2>
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th scope="col">項目</th>
+                <th scope="col">内容</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>制度開始</td>
+                <td>2024年1月</td>
+              </tr>
+
+              <tr>
+                <td>年間投資枠（つみたて投資枠）</td>
+                <td>120万円</td>
+              </tr>
+              <tr>
+                <td>年間投資枠（成長投資枠）</td>
+                <td>240万円</td>
+              </tr>
+              <tr>
+                <td>年間投資枠（合計）</td>
+                <td>360万円</td>
+              </tr>
+              <tr>
+                <td>非課税保有限度額（生涯）</td>
+                <td>1,800万円（うち成長投資枠は1,200万円まで）</td>
+              </tr>
+              <tr>
+                <td>非課税期間</td>
+                <td>無期限</td>
+              </tr>
+              <tr>
+                <td>口座開設可能年齢</td>
+                <td>18歳以上（1月1日時点）</td>
+              </tr>
+              <tr>
+                <td>枠の再利用</td>
+                <td>売却した翌年以降に簿価分が復活</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="source-list">
+
+            <p class="source-list__title">出典</p>
+            <ul class="source-list__items">
+              <li>金融庁「新しいNISA」</li>
+            </ul>
+            <p>最終確認日: 2026年11月7日</p>
+          </div>
+        </section>
+
+        <!-- よくある誤解 -->
+        <section class="section" aria-labelledby="sec-nisa-misconceptions">
+          <h2 id="sec-nisa-misconceptions" class="section__title">よくある誤解</h2>
+          <div class="accordion">
+            <div class="accordion__item">
+              <button class="accordion__trigger" aria-expanded="false" aria-controls="nisa-mis-1">
+                <span>「NISAで投資すれば損をしない」</span>
+                <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/>
+                </svg>
+              </button>
+              <div class="accordion__content" id="nisa-mis-1" hidden>
+                <p>NISAは利益が非課税になる制度であり、投資元本を保証する制度ではありません。投資した商品が値下がりすれば損失が発生します。さらに、NISA口座の損失は損益通算ができないため、税制上のデメリットもあります。</p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__trigger" aria-expanded="false" aria-controls="nisa-mis-2">
+                <span>「年間360万円をすべて成長投資枠で使える」</span>
+                <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/>
+                </svg>
+              </button>
+              <div class="accordion__content" id="nisa-mis-2" hidden>
+                <p>成長投資枠の年間上限は240万円です。残りの120万円はつみたて投資枠として使うことができますが、成長投資枠で360万円すべてを使うことはできません。一方、つみたて投資枠のみで生涯の非課税保有限度額1,800万円を使い切ることは可能です。</p>
+
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__trigger" aria-expanded="false" aria-controls="nisa-mis-3">
+                <span>「売却すればすぐに枠が復活する」</span>
+                <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/>
+                </svg>
+              </button>
+              <div class="accordion__content" id="nisa-mis-3" hidden>
+                <p>売却による非課税保有限度額の復活は翌年以降です。また、年間投資枠（つみたて120万円+成長240万円）は年ごとに決まっており、年の途中で売却しても当年の年間投資枠は増えません。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Quiz -->
+        <section class="quiz" data-quiz aria-labelledby="nisa-quiz-title">
+          <h2 id="nisa-quiz-title" class="quiz__title">理解度チェック</h2>
+
+          <div class="quiz__question" data-question data-answer="c">
+            <p class="quiz__question-text">Q1. 新しいNISAの年間投資枠の合計はいくらですか?</p>
+            <div class="quiz__options">
+              <div class="quiz__option" data-value="a" role="button" tabindex="0">a) 120万円</div>
+              <div class="quiz__option" data-value="b" role="button" tabindex="0">b) 240万円</div>
+              <div class="quiz__option" data-value="c" role="button" tabindex="0">c) 360万円（つみたて投資枠120万円 + 成長投資枠240万円）</div>
+            </div>
+            <div class="quiz__feedback" data-feedback-correct>正解です。つみたて投資枠120万円と成長投資枠240万円を合わせて、年間360万円です。</div>
+            <div class="quiz__feedback" data-feedback-incorrect>不正解です。新しいNISAの年間投資枠は、つみたて投資枠120万円＋成長投資枠240万円の合計360万円です。</div>
+          </div>
+
+          <div class="quiz__question" data-question data-answer="b">
+
+            <p class="quiz__question-text">Q2. 非課税保有限度額（生涯の総枠）はいくらですか?</p>
+            <div class="quiz__options">
+              <div class="quiz__option" data-value="a" role="button" tabindex="0">a) 1,200万円</div>
+              <div class="quiz__option" data-value="b" role="button" tabindex="0">b) 1,800万円</div>
+              <div class="quiz__option" data-value="c" role="button" tabindex="0">c) 2,400万円</div>
+            </div>
+            <div class="quiz__feedback" data-feedback-correct>正解です。生涯の非課税保有限度額は1,800万円です（うち成長投資枠は1,200万円まで）。</div>
+            <div class="quiz__feedback" data-feedback-incorrect>不正解です。生涯の非課税保有限度額は1,800万円です。このうち成長投資枠で使える上限は1,200万円です。</div>
+          </div>
+
+          <div class="quiz__question" data-question data-answer="a">
+            <p class="quiz__question-text">Q3. NISA口座の損失についての注意点として正しいものはどれですか?</p>
+            <div class="quiz__options">
+              <div class="quiz__option" data-value="a" role="button" tabindex="0">a) NISA口座の損失は、他の口座の利益と損益通算できない</div>
+              <div class="quiz__option" data-value="b" role="button" tabindex="0">b) NISA口座の損失は自動的に翌年に繰り越される</div>
+              <div class="quiz__option" data-value="c" role="button" tabindex="0">c) NISA口座では損失は発生しない</div>
+            </div>
+            <div class="quiz__feedback" data-feedback-correct>正解です。NISA口座で発生した損失は、特定口座や一般口座の利益と損益通算ができません。</div>
+            <div class="quiz__feedback" data-feedback-incorrect>不正解です。NISA口座でも損失は発生しますが、その損失は他の口座の利益との損益通算ができず、繰越控除も利用できません。</div>
+          </div>
+        </section>
+
+        <div class="read-check">
+          <input type="checkbox" id="read-check" class="read-check__checkbox">
+          <label for="read-check" id="read-check-label">このページを読了にする</label>
+        </div>
+
+        <section class="related-pages" aria-labelledby="nisa-related-title">
+          <h2 id="nisa-related-title" class="related-pages__title">関連ページ</h2>
+          <div class="card-grid card-grid--3">
+            <a href="products.html" class="card">
+              <span class="card__label">次のステップ</span>
+
+              <h3 class="card__title">金融商品を知る</h3>
+              <p class="card__desc">投資信託・ETF・債券の違いを整理します。</p>
+            </a>
+            <a href="costs-taxes.html" class="card">
+              <h3 class="card__title">コストと税金</h3>
+              <p class="card__desc">投資にかかるコストと税金を学びます。</p>
+            </a>
+            <a href="index-investing.html" class="card">
+              <h3 class="card__title">指数と投資信託</h3>
+              <p class="card__desc">インデックスファンドの仕組みを理解しましょう。</p>
+            </a>
+          </div>
+        </section>
+
+        <nav class="page-nav" aria-label="前後のページ">
+          <a href="compare.html" class="page-nav__link">
+            <span class="page-nav__direction">前のページ</span>
+            <span class="page-nav__title">06 オルカン vs S&amp;P 500</span>
+          </a>
+          <a href="products.html" class="page-nav__link page-nav__link--next">
+            <span class="page-nav__direction">次のページ</span>
+            <span class="page-nav__title">08 金融商品を知る</span>
+          </a>
+        </nav>
+
+      </article>
+
+      <div class="disclaimer-footnote">
+        当サイトは投資教育を目的としており、特定の金融商品の購入や売却を推奨するものではありません。投資には元本割れのリスクがあります。投資判断はご自身の責任で行ってください。
+      </div>
+
+    </main>
+
+
+    <aside class="right-rail" aria-label="目次・キーワード">
+      <div class="right-rail__title">目次</div>
+      <a href="#what-is-nisa" class="right-rail__toc-link">NISAとは</a>
+      <a href="#two-frames" class="right-rail__toc-link">2つの投資枠</a>
+      <a href="#lifetime-limit" class="right-rail__toc-link">非課税保有限度額</a>
+      <a href="#reuse" class="right-rail__toc-link">枠の再利用</a>
+      <a href="#eligibility" class="right-rail__toc-link">対象年齢と口座開設</a>
+      <a href="#nisa-cautions" class="right-rail__toc-link">注意点</a>
+      <a href="#nisa-summary" class="right-rail__toc-link">まとめ</a>
+
+      <div class="right-rail__terms">
+        <div class="right-rail__title">キーワード</div>
+        <div class="right-rail__term">
+          <div class="right-rail__term-name">NISA</div>
+          <div class="right-rail__term-def">少額投資非課税制度。投資の利益が非課税になる</div>
+        </div>
+        <div class="right-rail__term">
+          <div class="right-rail__term-name">非課税保有限度額</div>
+          <div class="right-rail__term-def">生涯を通じてNISAで保有できる上限額（1,800万円）</div>
+        </div>
+        <div class="right-rail__term">
+          <div class="right-rail__term-name">簿価残高方式</div>
+          <div class="right-rail__term-def">取得価額（買った金額）で非課税枠を管理する方式</div>
+        </div>
+        <div class="right-rail__term">
+          <div class="right-rail__term-name">損益通算</div>
+          <div class="right-rail__term-def">利益と損失を相殺して税金を減らす仕組み</div>
+        </div>
+      </div>
+    </aside>
+
+
+  </div>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <p class="footer__disclaimer">当サイトは投資教育を目的としており、特定の金融商品を推奨するものではありません。投資には元本割れのリスクがあります。</p>
+      <nav class="footer__links" aria-label="フッターナビゲーション">
+        <a href="index.html" class="footer__link">ホーム</a>
+        <a href="guide.html" class="footer__link">学習ガイド</a>
+        <a href="glossary.html" class="footer__link">用語集</a>
+        <a href="simulator.html" class="footer__link">シミュレーター</a>
+        <a href="sources.html" class="footer__link">出典・免責</a>
+      </nav>
+      <p class="footer__copy">&copy; <span class="footer__year"></span> Invest Atlas</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/quiz.js" defer></script>
+  <script src="js/progress.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>個別株投資 — Invest Atlas</title>
+  <meta name="description" content="個別株式への投資の仕組み、基本的な分析指標（PER・PBR・配当利回り）、投資判断のポイントと注意点を解説します。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="site">
+
+  <a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
+
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">Invest Atlas</a>
+      <nav class="header__nav" aria-label="グローバルナビゲーション">
+        <a href="guide.html" class="header__nav-link">学習ガイド</a>
+        <a href="glossary.html" class="header__nav-link">用語集</a>
+        <a href="simulator.html" class="header__nav-link">シミュレーター</a>
+        <a href="sources.html" class="header__nav-link">出典・免責</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="site__body">
+
+    <nav class="sidebar" aria-label="学習メニュー">
+      <div class="sidebar__section-title">学習コンテンツ</div>
+      <a href="basics.html" class="sidebar__link"><span class="sidebar__number">01</span>投資の基本</a>
+      <a href="listing.html" class="sidebar__link"><span class="sidebar__number">02</span>上場とIPO</a>
+      <a href="index-investing.html" class="sidebar__link"><span class="sidebar__number">03</span>指数と投資信託</a>
+
+      <a href="orukan.html" class="sidebar__link"><span class="sidebar__number">04</span>オルカンとは</a>
+      <a href="sp500.html" class="sidebar__link"><span class="sidebar__number">05</span>S&amp;P 500とは</a>
+      <a href="compare.html" class="sidebar__link"><span class="sidebar__number">06</span>オルカン vs S&amp;P 500</a>
+      <a href="nisa.html" class="sidebar__link"><span class="sidebar__number">07</span>新しいNISA</a>
+      <a href="products.html" class="sidebar__link"><span class="sidebar__number">08</span>金融商品を知る</a>
+      <a href="individual-stocks.html" class="sidebar__link"><span class="sidebar__number">09</span>個別株投資</a>
+      <a href="risk.html" class="sidebar__link"><span class="sidebar__number">10</span>リスクと分散</a>
+      <a href="costs-taxes.html" class="sidebar__link"><span class="sidebar__number">11</span>コストと税金</a>
+      <a href="advanced.html" class="sidebar__link"><span class="sidebar__number">12</span>上級編</a>
+      <div class="sidebar__section-title">ツール・資料</div>
+      <a href="guide.html" class="sidebar__link">学習ガイド</a>
+      <a href="glossary.html" class="sidebar__link">用語集</a>
+      <a href="simulator.html" class="sidebar__link">シミュレーター</a>
+      <a href="sources.html" class="sidebar__link">出典・免責</a>
+    </nav>
+
+    <main id="main-content" class="main">
+
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <a href="index.html" class="breadcrumb__link">ホーム</a>
+        <span class="breadcrumb__separator" aria-hidden="true">/</span>
+        <span class="breadcrumb__current">個別株投資</span>
+      </nav>
+
+      <span class="level-badge level-badge--intermediate">中級</span>
+      <span class="level-badge level-badge--advanced">上級</span>
+
+      <article>
+        <h1 class="h1">個別株投資</h1>
+
+        <div class="lead-box">
+          <p class="lead-box__title">このページで学ぶこと</p>
+
+          <ul class="lead-box__list">
+            <li>個別株投資とインデックス投資の違い</li>
+            <li>基本的な分析指標（PER・PBR・配当利回り）</li>
+            <li>ファンダメンタル分析とテクニカル分析</li>
+            <li>個別株投資の注意点</li>
+          </ul>
+        </div>
+
+        <!-- 個別株投資とは -->
+        <section class="section" id="what-is-individual" aria-labelledby="sec-individual">
+          <h2 id="sec-individual" class="section__title">個別株投資とは</h2>
+          <p>個別株投資とは、特定の企業の株式を自分で選んで投資することです。インデックスファンドが市場全体に分散投資するのに対し、個別株投資では特定の企業の成長や収益に直接賭けることになります。</p>
+
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th scope="col">項目</th>
+                <th scope="col">個別株投資</th>
+                <th scope="col">インデックス投資</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>分散の度合い</td>
+                <td>1銘柄〜数十銘柄（自分で選定）</td>
+                <td>数百〜数千銘柄に自動分散</td>
+              </tr>
+              <tr>
+                <td>銘柄選定</td>
+                <td>自分で分析・判断する</td>
+                <td>指数が自動的に決定する</td>
+              </tr>
+
+              <tr>
+                <td>運用コスト</td>
+                <td>売買手数料のみ（保有中はコストなし）</td>
+                <td>信託報酬が継続的にかかる</td>
+              </tr>
+              <tr>
+                <td>リターンの可能性</td>
+                <td>市場平均を上回る可能性も下回る可能性もある</td>
+                <td>市場平均に連動する</td>
+              </tr>
+              <tr>
+                <td>必要な知識・時間</td>
+                <td>企業分析や市場調査が必要</td>
+                <td>比較的少ない</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- 基本的な分析指標 -->
+        <section class="section" id="metrics" aria-labelledby="sec-metrics">
+          <h2 id="sec-metrics" class="section__title">基本的な分析指標</h2>
+
+          <h3 class="section__subtitle">PER（株価収益率）</h3>
+          <p>PER（Price Earnings Ratio）は、株価が1株あたり利益（EPS）の何倍かを示す指標です。</p>
+
+          <div class="figure-block">
+            <p>PER = 株価 ÷ EPS（1株あたり当期純利益）</p>
+          </div>
+
+          <div class="worked-example">
+            <p class="worked-example__label">仮定・試算</p>
+
+            <p>ある企業の株価が2,000円、EPS（1株あたり当期純利益）が100円の場合:</p>
+            <p>PER = 2,000円 ÷ 100円 = 20倍</p>
+            <p>これは「この企業の利益が現在のまま続くと仮定した場合、投資額を回収するのに20年分の利益が必要」という意味合いです。</p>
+          </div>
+
+          <p>PERが高いと「割高」、低いと「割安」と判断されることがありますが、業種や成長期待によって適正水準は異なります。PERだけで割安・割高を判断することはできません。</p>
+
+          <h3 class="section__subtitle">PBR（株価純資産倍率）</h3>
+          <p>PBR（Price Book-value Ratio）は、株価が1株あたり純資産（BPS）の何倍かを示す指標です。</p>
+
+          <div class="figure-block">
+            <p>PBR = 株価 ÷ BPS（1株あたり純資産）</p>
+          </div>
+
+          <p>PBRが1倍を下回ると、理論上は「企業の解散価値よりも株価が低い」状態ですが、必ずしも割安とは限りません。将来の収益性への不安や、資産の実態（含み損など）が反映されている場合もあります。</p>
+
+          <h3 class="section__subtitle">配当利回り</h3>
+          <p>配当利回りは、株価に対する年間配当金の割合を示す指標です。</p>
+
+          <div class="figure-block">
+            <p>配当利回り = 年間配当金 ÷ 株価 × 100（%）</p>
+          </div>
+
+          <p>配当利回りが高い銘柄は「高配当株」と呼ばれることがありますが、配当利回りが高い理由が株価の下落によるものである場合もあります。また、配当は企業の業績によって増減し、無配になることもあります。</p>
+        </section>
+
+        <!-- 分析アプローチ -->
+        <section class="section" id="analysis" aria-labelledby="sec-analysis">
+          <h2 id="sec-analysis" class="section__title">分析のアプローチ</h2>
+
+          <h3 class="section__subtitle">ファンダメンタル分析</h3>
+          <p>企業の業績、財務状況、業界の動向、経済環境などを分析して、企業の「本質的な価値」を評価するアプローチです。PER・PBR・配当利回りなどの指標や、決算書（損益計算書・貸借対照表・キャッシュフロー計算書）の分析が含まれます。</p>
+
+
+          <h3 class="section__subtitle">テクニカル分析</h3>
+          <p>過去の株価や出来高のパターンをチャートで分析し、将来の値動きを予測しようとするアプローチです。移動平均線、RSI、ボリンジャーバンドなどの指標が使われます。</p>
+
+          <div class="callout callout--info">
+            <p class="callout__title">どちらが正しいか</p>
+            <p>ファンダメンタル分析とテクニカル分析は対立するものではなく、多くの投資家が両方を組み合わせて利用しています。どちらのアプローチにも限界があり、「確実に正しい予測ができる方法」は存在しません。</p>
+          </div>
+        </section>
+
+        <!-- 注意点 -->
+        <section class="section" id="stock-cautions" aria-labelledby="sec-stock-cautions">
+          <h2 id="sec-stock-cautions" class="section__title">個別株投資の注意点</h2>
+          <ul>
+            <li>1銘柄への集中投資は、その企業固有のリスク（業績悪化、不祥事、倒産など）を直接受ける</li>
+            <li>企業分析には時間と知識が必要であり、継続的な情報収集が求められる</li>
+            <li>短期的な株価の変動に一喜一憂しやすい</li>
+            <li>「割安に見える」銘柄が本当に割安かどうかは、表面的な指標だけでは判断できない（バリュートラップ）</li>
+            <li>過去の株価パターンが将来も繰り返される保証はない</li>
+            <li>SNSやメディアの情報に影響されやすい。情報の出所と信頼性を確認することが重要</li>
+          </ul>
+
+          <div class="callout callout--warning">
+            <p class="callout__title">インサイダー取引に注意</p>
+            <p>業務上知り得た未公開の重要事実（インサイダー情報）に基づいて株式を売買することは、金融商品取引法で禁止されています。違反した場合は刑事罰の対象となります。</p>
+          </div>
+        </section>
+
+        <!-- よくある誤解 -->
+        <section class="section" aria-labelledby="sec-stock-misconceptions">
+          <h2 id="sec-stock-misconceptions" class="section__title">よくある誤解</h2>
+          <div class="accordion">
+
+            <div class="accordion__item">
+              <button class="accordion__trigger" aria-expanded="false" aria-controls="stock-mis-1">
+                <span>「PERが低い株は必ず割安」</span>
+                <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/>
+                </svg>
+              </button>
+              <div class="accordion__content" id="stock-mis-1" hidden>
+                <p>PERが低い理由は様々です。将来の業績悪化が予想されている、業界全体が構造的に低評価、一時的な利益で見かけ上のPERが下がっているなどの場合があります。PERだけで割安と判断するのは危険です。</p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__trigger" aria-expanded="false" aria-controls="stock-mis-2">
+                <span>「高配当株は安定している」</span>
+                <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/>
+                </svg>
+              </button>
+              <div class="accordion__content" id="stock-mis-2" hidden>
+                <p>配当利回りが高い理由が株価の大幅な下落にある場合、「高配当」は安定の証ではなく、市場がリスクを織り込んでいるサインかもしれません。また、業績の悪化により減配や無配になる可能性もあります。</p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__trigger" aria-expanded="false" aria-controls="stock-mis-3">
+                <span>「有名企業の株は安全」</span>
+                <svg class="accordion__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/>
+                </svg>
+              </button>
+              <div class="accordion__content" id="stock-mis-3" hidden>
+                <p>企業の知名度と株式投資としての安全性は直結しません。大企業でも業績悪化や不祥事により株価が大幅に下落することはあります。過去にも大手企業が経営危機に陥った例は多数あります。</p>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- Quiz -->
+        <section class="quiz" data-quiz aria-labelledby="stock-quiz-title">
+          <h2 id="stock-quiz-title" class="quiz__title">理解度チェック</h2>
+
+          <div class="quiz__question" data-question data-answer="b">
+            <p class="quiz__question-text">Q1. 株価が2,000円、EPSが100円の場合、PERはいくらですか?</p>
+            <div class="quiz__options">
+              <div class="quiz__option" data-value="a" role="button" tabindex="0">a) 10倍</div>
+              <div class="quiz__option" data-value="b" role="button" tabindex="0">b) 20倍</div>
+              <div class="quiz__option" data-value="c" role="button" tabindex="0">c) 200倍</div>
+            </div>
+            <div class="quiz__feedback" data-feedback-correct>正解です。PER = 株価 ÷ EPS = 2,000円 ÷ 100円 = 20倍です。</div>
+            <div class="quiz__feedback" data-feedback-incorrect>不正解です。PER = 株価 ÷ EPS = 2,000円 ÷ 100円 = 20倍です。</div>
+          </div>
+
+          <div class="quiz__question" data-question data-answer="c">
+            <p class="quiz__question-text">Q2. 個別株投資のリスクとして正しいものはどれですか?</p>
+            <div class="quiz__options">
+              <div class="quiz__option" data-value="a" role="button" tabindex="0">a) 市場平均と同じリターンが保証される</div>
+              <div class="quiz__option" data-value="b" role="button" tabindex="0">b) 信託報酬がかかるため長期的にコストが高い</div>
+              <div class="quiz__option" data-value="c" role="button" tabindex="0">c) 1銘柄への集中投資は企業固有のリスクを直接受ける</div>
+            </div>
+            <div class="quiz__feedback" data-feedback-correct>正解です。個別株投資では、投資先企業の業績悪化や不祥事などのリスクを直接受けます。</div>
+            <div class="quiz__feedback" data-feedback-incorrect>不正解です。個別株投資は市場平均のリターンが保証されるものではなく、企業固有のリスクを直接受けます。保有中の信託報酬はかかりません。</div>
+          </div>
+
+          <div class="quiz__question" data-question data-answer="a">
+            <p class="quiz__question-text">Q3. ファンダメンタル分析とテクニカル分析について正しいものはどれですか?</p>
+
+            <div class="quiz__options">
+              <div class="quiz__option" data-value="a" role="button" tabindex="0">a) どちらのアプローチにも限界があり、確実な予測方法は存在しない</div>
+              <div class="quiz__option" data-value="b" role="button" tabindex="0">b) テクニカル分析は科学的に証明された確実な手法である</div>
+              <div class="quiz__option" data-value="c" role="button" tabindex="0">c) ファンダメンタル分析だけで十分であり、テクニカル分析は不要</div>
+            </div>
+            <div class="quiz__feedback" data-feedback-correct>正解です。どちらのアプローチにも限界があり、確実に正しい予測ができる方法は存在しません。</div>
+            <div class="quiz__feedback" data-feedback-incorrect>不正解です。ファンダメンタル分析もテクニカル分析も、それぞれ限界があります。確実な予測方法は存在しません。</div>
+          </div>
+        </section>
+
+        <div class="read-check">
+          <input type="checkbox" id="read-check" class="read-check__checkbox">
+          <label for="read-check" id="read-check-label">このページを読了にする</label>
+        </div>
+
+        <section class="related-pages" aria-labelledby="stock-related-title">
+          <h2 id="stock-related-title" class="related-pages__title">関連ページ</h2>
+          <div class="card-grid card-grid--3">
+            <a href="risk.html" class="card">
+              <span class="card__label">次のステップ</span>
+              <h3 class="card__title">リスクと分散</h3>
+              <p class="card__desc">リスクの種類と分散投資の考え方を学びます。</p>
+            </a>
+            <a href="products.html" class="card">
+              <h3 class="card__title">金融商品を知る</h3>
+              <p class="card__desc">投資信託・ETF・債券との違いを比較します。</p>
+            </a>
+            <a href="costs-taxes.html" class="card">
+              <h3 class="card__title">コストと税金</h3>
+              <p class="card__desc">投資にかかるコストと税金を整理します。</p>
+            </a>
+          </div>
+
+        </section>
+
+        <nav class="page-nav" aria-label="前後のページ">
+          <a href="products.html" class="page-nav__link">
+            <span class="page-nav__direction">前のページ</span>
+            <span class="page-nav__title">08 金融商品を知る</span>
+          </a>
+          <a href="risk.html" class="page-nav__link page-nav__link--next">
+            <span class="page-nav__direction">次のページ</span>
+            <span class="page-nav__title">10 リスクと分散</span>
+          </a>
+        </nav>
+
+      </article>
+
+      <div class="disclaimer-footnote">
+        当サイトは投資教育を目的としており、特定の金融商品の購入や売却を推奨するものではありません。投資には元本割れのリスクがあります。投資判断はご自身の責任で行ってください。
+      </div>
+
+    </main>
+
+    <aside class="right-rail" aria-label="目次・キーワード">
+      <div class="right-rail__title">目次</div>
+      <a href="#what-is-individual" class="right-rail__toc-link">個別株投資とは</a>
+      <a href="#metrics" class="right-rail__toc-link">基本的な分析指標</a>
+      <a href="#analysis" class="right-rail__toc-link">分析のアプローチ</a>
+      <a href="#stock-cautions" class="right-rail__toc-link">注意点</a>
+
+      <div class="right-rail__terms">
+        <div class="right-rail__title">キーワード</div>
+        <div class="right-rail__term">
+          <div class="right-rail__term-name">PER</div>
+
+          <div class="right-rail__term-def">株価収益率。株価がEPSの何倍かを示す</div>
+        </div>
+        <div class="right-rail__term">
+          <div class="right-rail__term-name">PBR</div>
+          <div class="right-rail__term-def">株価純資産倍率。株価がBPSの何倍かを示す</div>
+        </div>
+        <div class="right-rail__term">
+          <div class="right-rail__term-name">EPS</div>
+          <div class="right-rail__term-def">1株あたり当期純利益</div>
+        </div>
+        <div class="right-rail__term">
+          <div class="right-rail__term-name">配当利回り</div>
+          <div class="right-rail__term-def">株価に対する年間配当金の割合</div>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <p class="footer__disclaimer">当サイトは投資教育を目的としており、特定の金融商品を推奨するものではありません。投資には元本割れのリスクがあります。</p>
+      <nav class="footer__links" aria-label="フッターナビゲーション">
+        <a href="index.html" class="footer__link">ホーム</a>
+        <a href="guide.html" class="footer__link">学習ガイド</a>
+        <a href="glossary.html" class="footer__link">用語集</a>
+        <a href="simulator.html" class="footer__link">シミュレーター</a>
+        <a href="sources.html" class="footer__link">出典・免責</a>
+      </nav>
+      <p class="footer__copy">&copy; <span class="footer__year"></span> Invest Atlas</p>
+    </div>
+  </footer>
+
+
+  <script src="js/main.js" defer></script>
+  <script src="js/quiz.js" defer></script>
+  <script src="js/progress.js" defer></script>
+</body>
+</html>
