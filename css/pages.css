@@ -402,3 +402,67 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+/* ============================================================
+   Figure Block — SVG図解の画像とキャプション
+   ============================================================ */
+.figure-block__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-inline: auto;
+  border-radius: var(--border-radius-md);
+  background-color: var(--color-background);
+}
+
+.figure-block__caption {
+  margin-top: var(--space-3);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+/* ============================================================
+   Card Grid — 3列バリアント
+   既存の .card-grid--2 / --4 と同形式
+   ============================================================ */
+.card-grid--3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+@media (max-width: 768px) {
+  .card-grid--3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================
+   Worked Example — 計算例の囲みブロック
+   ============================================================ */
+.worked-example {
+  background-color: var(--color-background-sage);
+  padding: var(--space-6);
+  border-radius: var(--border-radius-md);
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+.worked-example__label {
+  font-weight: bold;
+  margin-bottom: var(--space-3);
+}
+
+/* ============================================================
+   Source List — 出典・参考リンク一覧
+   ============================================================ */
+.source-list__title {
+  font-weight: bold;
+  margin-bottom: var(--space-3);
+}
+
+.source-list__items {
+  padding-left: var(--space-5);
+  margin-top: 0;
+  margin-bottom: 0;
+}
