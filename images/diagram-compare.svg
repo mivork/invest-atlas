@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-labelledby="title-compare desc-compare">
+  <title id="title-compare">投資対象の範囲の包含図</title>
+  <desc id="desc-compare">全世界の株式（オルカン）の大きな枠の中に、米国の株式（S&amp;P 500）の枠が含まれるベン図風の概念図。オルカンはS&amp;P 500を含む、より広い範囲に投資することを示す。</desc>
+  <style>
+    text { font-family: sans-serif; fill: #1a1a1a; }
+    .outer-label { font-size: 18px; font-weight: bold; fill: #173b35; text-anchor: middle; }
+    .inner-label { font-size: 17px; font-weight: bold; fill: #243b60; text-anchor: middle; }
+    .sub { font-size: 13px; fill: #4a4a4a; text-anchor: middle; }
+    .note { font-size: 13px; fill: #4a4a4a; text-anchor: middle; }
+    .badge { font-size: 12px; fill: #ffffff; }
+  </style>
+
+  <!-- バッジ -->
+  <rect x="620" y="12" width="160" height="26" rx="13" ry="13" fill="#243b60"/>
+  <text class="badge" x="700" y="30" text-anchor="middle">概念図（イメージ）</text>
+
+  <!-- 外枠: 全世界株式（オルカン） -->
+  <rect x="60" y="60" width="680" height="260" rx="16" ry="16" fill="#d9e6df" stroke="#0e7c61" stroke-width="2.5"/>
+  <text class="outer-label" x="400" y="95">全世界の株式（オール・カントリー）</text>
+
+  <!-- 外枠内の国名（米国以外） -->
+  <text class="sub" x="140" y="200">欧州</text>
+  <text class="sub" x="140" y="225">先進国</text>
+
+  <text class="sub" x="140" y="280">新興国</text>
+
+  <text class="sub" x="660" y="200">日本</text>
+
+  <text class="sub" x="660" y="255">その他</text>
+  <text class="sub" x="660" y="275">の国・地域</text>
+
+  <!-- 内枠: S&P 500（米国） -->
+  <rect x="220" y="120" width="360" height="180" rx="12" ry="12" fill="#ffffff" stroke="#243b60" stroke-width="2.5"/>
+  <text class="inner-label" x="400" y="190">米国株式</text>
+  <text class="inner-label" x="400" y="215">（S&amp;P 500）</text>
+  <text class="sub" x="400" y="245">米国の代表的な約500社</text>
+  <text class="sub" x="400" y="265">米国市場の約80%をカバー</text>
+
+  <!-- 矢印と注記 -->
+  <line x1="400" y1="320" x2="400" y2="355" stroke="#0e7c61" stroke-width="1.5"/>
+  <text class="note" x="400" y="375">オルカンは S&amp;P 500 を含む、世界中の株式に幅広く投資します</text>
+  <text class="note" x="400" y="395">S&amp;P 500 は米国に集中して投資する点が異なります</text>
+</svg>

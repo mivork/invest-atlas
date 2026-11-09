@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-labelledby="title-div desc-div">
+  <title id="title-div">分散投資の効果の概念図</title>
+  <desc id="desc-div">1銘柄のみの激しい値動きと、分散投資した場合のなだらかな値動きを対比して示す概念図。値動きはイメージであり実際の数値ではない。</desc>
+  <style>
+    text { font-family: sans-serif; fill: #1a1a1a; }
+    .axis { stroke: #d1d5db; stroke-width: 1.5; fill: none; }
+    .axis-label { font-size: 14px; fill: #4a4a4a; }
+    .line-single { stroke: #b45309; stroke-width: 2; fill: none; }
+    .line-diversified { stroke: #0e7c61; stroke-width: 2.5; fill: none; }
+    .legend { font-size: 14px; }
+    .note { font-size: 13px; fill: #4a4a4a; text-anchor: middle; }
+    .badge { font-size: 12px; fill: #ffffff; }
+    .annotation { font-size: 12px; fill: #4a4a4a; }
+  </style>
+
+  <!-- バッジ -->
+  <rect x="620" y="12" width="160" height="26" rx="13" ry="13" fill="#243b60"/>
+  <text class="badge" x="700" y="30" text-anchor="middle">値動きのイメージ</text>
+
+  <!-- 軸 -->
+  <line class="axis" x1="80" y1="300" x2="720" y2="300"/>
+  <line class="axis" x1="80" y1="300" x2="80" y2="50"/>
+  <polygon points="720,296 720,304 738,300" fill="#d1d5db"/>
+  <polygon points="76,50 84,50 80,33" fill="#d1d5db"/>
+
+  <text class="axis-label" x="400" y="330" text-anchor="middle">時間</text>
+  <text class="axis-label" x="45" y="175" text-anchor="middle" transform="rotate(-90, 45, 175)">価格</text>
+
+  <!-- 1銘柄のみ（激しい値動き） -->
+  <path class="line-single" d="M100,200 L140,130 L180,240 L220,110 L260,260 L300,140 L340,230 L380,100 L420,270 L460,120 L500,250 L540,90 L580,220 L620,150 L660,210 L700,160"/>
+
+  <!-- 分散投資（なだらかな値動き） -->
+  <path class="line-diversified" d="M100,200 C150,190 180,195 220,185 S280,175 320,180 S380,170 420,165 S480,158 520,162 S580,155 620,150 S660,148 700,142"/>
+
+  <!-- 振幅の注記（1銘柄側） -->
+  <line x1="730" y1="100" x2="730" y2="250" stroke="#b45309" stroke-width="1" stroke-dasharray="3,3"/>
+  <text class="annotation" x="745" y="170" fill="#b45309">振幅</text>
+  <text class="annotation" x="745" y="184" fill="#b45309">大</text>
+
+  <!-- 凡例 -->
+  <line x1="120" y1="62" x2="155" y2="62" stroke="#b45309" stroke-width="2"/>
+  <text class="legend" x="165" y="67" fill="#b45309">1銘柄のみに投資した場合</text>
+
+  <line x1="420" y1="62" x2="455" y2="62" stroke="#0e7c61" stroke-width="2.5"/>
+  <text class="legend" x="465" y="67" fill="#0e7c61">多くの銘柄に分散した場合</text>
+
+  <!-- 下部の注記 -->
+  <line x1="60" y1="350" x2="740" y2="350" stroke="#e5e7eb" stroke-width="1"/>
+  <text class="note" x="400" y="375">分散投資により、個別銘柄の大きな値動きが互いに打ち消し合い、</text>
+  <text class="note" x="400" y="395">全体としてなだらかな値動きになる傾向があります</text>
+</svg>

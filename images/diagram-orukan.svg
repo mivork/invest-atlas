@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="title-orukan desc-orukan">
+  <title id="title-orukan">時価総額加重平均の概念図</title>
+  <desc id="desc-orukan">時価総額加重平均では、時価総額が大きい国ほどファンド内の割合が大きくなることを、大きさの異なる円で示す概念図。比率はイメージであり実際の数値ではない。</desc>
+  <style>
+    text { font-family: sans-serif; fill: #1a1a1a; }
+    .circle-label { font-size: 15px; font-weight: bold; text-anchor: middle; }
+    .circle-sub { font-size: 12px; fill: #4a4a4a; text-anchor: middle; }
+    .note { font-size: 13px; fill: #4a4a4a; text-anchor: middle; }
+    .badge { font-size: 12px; fill: #ffffff; }
+    .section-title { font-size: 16px; font-weight: bold; text-anchor: middle; fill: #173b35; }
+    .explain { font-size: 14px; fill: #4a4a4a; text-anchor: middle; }
+  </style>
+
+  <!-- バッジ -->
+  <rect x="600" y="12" width="180" height="26" rx="13" ry="13" fill="#243b60"/>
+  <text class="badge" x="690" y="30" text-anchor="middle">比率はイメージです</text>
+
+  <!-- タイトル -->
+  <text class="section-title" x="400" y="55">時価総額加重平均のイメージ</text>
+  <text class="explain" x="400" y="78">時価総額が大きい国・地域ほど、ファンド内の割合が大きくなる</text>
+
+  <!-- 大きな円: 米国 -->
+  <circle cx="260" cy="230" r="120" fill="#d9e6df" stroke="#0e7c61" stroke-width="2"/>
+  <text class="circle-label" x="260" y="222" fill="#173b35">米国</text>
+  <text class="circle-sub" x="260" y="244">時価総額が最大</text>
+
+  <!-- 中くらいの円: 欧州 -->
+  <circle cx="470" cy="215" r="75" fill="#ffffff" stroke="#243b60" stroke-width="2"/>
+  <text class="circle-label" x="470" y="210" fill="#243b60">欧州</text>
+  <text class="circle-sub" x="470" y="228">先進国</text>
+
+  <!-- 小さめの円: 日本 -->
+  <circle cx="590" cy="190" r="50" fill="#ffffff" stroke="#173b35" stroke-width="2"/>
+  <text class="circle-label" x="590" y="188">日本</text>
+  <text class="circle-sub" x="590" y="204">先進国</text>
+
+  <!-- さらに小さい円: 新興国 -->
+  <circle cx="690" cy="250" r="40" fill="#f5f6f2" stroke="#b45309" stroke-width="2"/>
+  <text class="circle-label" x="690" y="247" font-size="13" fill="#b45309">新興国</text>
+  <text class="circle-sub" x="690" y="263" font-size="11">等</text>
+
+  <!-- その他の小さい円 -->
+  <circle cx="580" cy="290" r="28" fill="#f5f6f2" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="580" y="293" font-size="11" fill="#4a4a4a" font-family="sans-serif" text-anchor="middle">その他</text>
+
+  <!-- 下部の注記 -->
+  <line x1="60" y1="365" x2="740" y2="365" stroke="#e5e7eb" stroke-width="1"/>
+  <text class="note" x="400" y="390">円の大きさは概念的なイメージです。実際の構成比率を正確に反映したものではありません</text>
+  <text class="note" x="400" y="410">全世界株式（オール・カントリー）は、このように世界中の国・地域に分散投資します</text>
+</svg>

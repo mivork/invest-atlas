@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="title-dca desc-dca">
+  <title id="title-dca">ドルコスト平均法の概念図</title>
+  <desc id="desc-dca">価格が上下する中で毎月一定額を投資すると、価格が安いときは多く、高いときは少なく買えることを示す仮定の例。</desc>
+  <style>
+    text { font-family: sans-serif; fill: #1a1a1a; }
+    .axis { stroke: #d1d5db; stroke-width: 1.5; fill: none; }
+    .axis-label { font-size: 14px; fill: #4a4a4a; }
+    .price-line { stroke: #243b60; stroke-width: 2.5; fill: none; }
+    .buy-dot { fill: #0e7c61; }
+    .buy-label { font-size: 11px; fill: #0e7c61; text-anchor: middle; }
+    .invest-line { stroke: #b45309; stroke-width: 1.5; stroke-dasharray: 5,3; }
+    .note { font-size: 13px; fill: #4a4a4a; text-anchor: middle; }
+    .badge { font-size: 12px; fill: #ffffff; }
+    .legend { font-size: 13px; }
+  </style>
+
+  <!-- 仮定の例バッジ -->
+  <rect x="620" y="12" width="160" height="26" rx="13" ry="13" fill="#b45309"/>
+  <text class="badge" x="700" y="30" text-anchor="middle">仮定の例（イメージ）</text>
+
+  <!-- 軸 -->
+  <line class="axis" x1="80" y1="300" x2="740" y2="300"/>
+  <line class="axis" x1="80" y1="300" x2="80" y2="50"/>
+  <polygon points="740,296 740,304 755,300" fill="#d1d5db"/>
+  <polygon points="76,50 84,50 80,35" fill="#d1d5db"/>
+
+  <text class="axis-label" x="410" y="330" text-anchor="middle">月</text>
+  <text class="axis-label" x="45" y="175" text-anchor="middle" transform="rotate(-90, 45, 175)">価格</text>
+
+  <!-- 月ラベル -->
+  <text class="axis-label" x="140" y="318" text-anchor="middle">1月</text>
+  <text class="axis-label" x="240" y="318" text-anchor="middle">2月</text>
+  <text class="axis-label" x="340" y="318" text-anchor="middle">3月</text>
+  <text class="axis-label" x="440" y="318" text-anchor="middle">4月</text>
+  <text class="axis-label" x="540" y="318" text-anchor="middle">5月</text>
+  <text class="axis-label" x="640" y="318" text-anchor="middle">6月</text>
+
+  <!-- 一定額の投資ライン（横） -->
+  <line class="invest-line" x1="80" y1="185" x2="740" y2="185"/>
+  <text x="755" y="189" font-size="11" fill="#b45309" font-family="sans-serif">毎月</text>
+  <text x="755" y="202" font-size="11" fill="#b45309" font-family="sans-serif">一定額</text>
+
+  <!-- 価格変動の折れ線 -->
+  <polyline class="price-line" points="140,160 240,240 340,270 440,200 540,130 640,170"/>
+
+  <!-- 購入ポイント -->
+  <circle class="buy-dot" cx="140" cy="160" r="7"/>
+  <text class="buy-label" x="140" y="145">少なく買う</text>
+
+  <circle class="buy-dot" cx="240" cy="240" r="7"/>
+  <text class="buy-label" x="240" y="260">多く買う</text>
+
+  <circle class="buy-dot" cx="340" cy="270" r="7"/>
+  <text class="buy-label" x="340" y="290">最も多く</text>
+
+  <circle class="buy-dot" cx="440" cy="200" r="7"/>
+
+  <circle class="buy-dot" cx="540" cy="130" r="7"/>
+  <text class="buy-label" x="540" y="118">最も少なく</text>
+
+  <circle class="buy-dot" cx="640" cy="170" r="7"/>
+
+  <!-- 凡例 -->
+  <line x1="100" y1="60" x2="130" y2="60" stroke="#243b60" stroke-width="2.5"/>
+  <text class="legend" x="140" y="65" fill="#243b60">価格の推移</text>
+
+  <circle cx="240" cy="60" r="5" fill="#0e7c61"/>
+  <text class="legend" x="255" y="65" fill="#0e7c61">毎月の購入ポイント</text>
+
+  <line x1="420" y1="60" x2="450" y2="60" stroke="#b45309" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text class="legend" x="460" y="65" fill="#b45309">毎月の投資額（一定）</text>
+
+  <!-- 下部の注記 -->
+  <line x1="60" y1="350" x2="740" y2="350" stroke="#e5e7eb" stroke-width="1"/>
+  <text class="note" x="400" y="375">価格が安いときは多くの口数を、高いときは少ない口数を購入する</text>
+  <text class="note" x="400" y="395">結果として、平均購入単価を平準化する効果が期待できます</text>
+  <text class="note" x="400" y="415" font-size="12">※ 将来のリターンを保証するものではありません</text>
+</svg>

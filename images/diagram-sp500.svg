@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" role="img" aria-labelledby="title-sp500 desc-sp500">
+  <title id="title-sp500">S&amp;P 500 のカバー範囲</title>
+  <desc id="desc-sp500">米国株式市場全体を表すバーの約80%がS&amp;P 500のカバー範囲であることを示す図。</desc>
+  <style>
+    text { font-family: sans-serif; fill: #1a1a1a; }
+    .bar-bg { fill: #f5f6f2; stroke: #d1d5db; stroke-width: 2; rx: 8; ry: 8; }
+    .bar-sp500 { fill: #d9e6df; stroke: #0e7c61; stroke-width: 2; rx: 8; ry: 8; }
+    .label { font-size: 16px; font-weight: bold; text-anchor: middle; }
+    .sublabel { font-size: 14px; fill: #4a4a4a; text-anchor: middle; }
+    .pct { font-size: 22px; font-weight: bold; fill: #0e7c61; text-anchor: middle; }
+    .note { font-size: 13px; fill: #4a4a4a; text-anchor: middle; }
+    .brace-text { font-size: 14px; fill: #173b35; text-anchor: middle; }
+  </style>
+
+  <!-- タイトル -->
+  <text x="400" y="45" font-size="16" font-weight="bold" fill="#173b35" font-family="sans-serif" text-anchor="middle">S&amp;P 500 は米国株式市場の約80%をカバー</text>
+
+  <!-- 全体バー: 米国株式市場 -->
+  <rect class="bar-bg" x="60" y="100" width="680" height="100"/>
+  <text class="sublabel" x="400" y="85">米国株式市場全体</text>
+
+  <!-- S&P 500 バー（約80%） -->
+  <rect class="bar-sp500" x="60" y="100" width="544" height="100"/>
+  <text class="label" x="332" y="145" fill="#173b35">S&amp;P 500</text>
+  <text class="sublabel" x="332" y="170">米国を代表する約500社</text>
+
+  <!-- 残り -->
+  <text class="sublabel" x="660" y="145">中小型株</text>
+  <text class="sublabel" x="660" y="165">など</text>
+
+  <!-- 約80% 表記 -->
+  <line x1="60" y1="225" x2="604" y2="225" stroke="#0e7c61" stroke-width="2"/>
+  <line x1="60" y1="215" x2="60" y2="235" stroke="#0e7c61" stroke-width="2"/>
+  <line x1="604" y1="215" x2="604" y2="235" stroke="#0e7c61" stroke-width="2"/>
+  <text class="pct" x="332" y="258">約80%</text>
+  <text class="brace-text" x="332" y="278">時価総額ベース</text>
+
+  <!-- 全体の範囲 -->
+  <line x1="60" y1="295" x2="740" y2="295" stroke="#d1d5db" stroke-width="1.5"/>
+  <line x1="60" y1="288" x2="60" y2="302" stroke="#d1d5db" stroke-width="1.5"/>
+  <line x1="740" y1="288" x2="740" y2="302" stroke="#d1d5db" stroke-width="1.5"/>
+  <text class="sublabel" x="400" y="318">米国株式市場全体（100%）</text>
+
+  <!-- 下部の注記 -->
+  <text class="note" x="400" y="355">S&amp;P 500 に連動するファンドは、この約500社に分散投資することになります</text>
+</svg>

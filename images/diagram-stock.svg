@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-labelledby="title-stock desc-stock">
+  <title id="title-stock">株式の仕組みフロー図</title>
+  <desc id="desc-stock">会社が株式を発行し、証券市場・証券会社を通じて投資家が購入する流れ。投資家は配当や値上がり益の可能性がある一方、値下がりリスクもあることを示す概念図。</desc>
+  <style>
+    text { font-family: sans-serif; fill: #1a1a1a; }
+    .box { rx: 8; ry: 8; stroke-width: 2; }
+    .box-primary { fill: #ffffff; stroke: #173b35; }
+    .box-secondary { fill: #d9e6df; stroke: #0e7c61; }
+    .box-accent { fill: #ffffff; stroke: #243b60; }
+    .label { font-size: 16px; font-weight: bold; text-anchor: middle; }
+    .sublabel { font-size: 13px; fill: #4a4a4a; text-anchor: middle; }
+    .arrow-line { stroke: #173b35; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    .arrow-line-dual { stroke: #0e7c61; stroke-width: 2; fill: none; }
+    .note { font-size: 13px; fill: #4a4a4a; text-anchor: middle; }
+    .gain { fill: #0e7c61; font-size: 13px; text-anchor: middle; }
+    .risk { fill: #b91c1c; font-size: 13px; text-anchor: middle; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#173b35"/>
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0e7c61"/>
+    </marker>
+    <marker id="arrowhead-green-rev" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="10 0, 0 3.5, 10 7" fill="#0e7c61"/>
+    </marker>
+  </defs>
+
+  <!-- 会社 -->
+  <rect class="box box-primary" x="40" y="140" width="160" height="80"/>
+  <text class="label" x="120" y="175">会社</text>
+  <text class="sublabel" x="120" y="198">株式を発行</text>
+
+  <!-- 矢印: 会社 → 証券市場 -->
+  <line class="arrow-line" x1="200" y1="180" x2="268" y2="180"/>
+
+  <!-- 証券市場・証券会社 -->
+  <rect class="box box-secondary" x="280" y="130" width="200" height="100"/>
+  <text class="label" x="380" y="170" fill="#173b35">証券市場</text>
+  <text class="sublabel" x="380" y="193">証券会社を通じて</text>
+  <text class="sublabel" x="380" y="211">売買が行われる</text>
+
+  <!-- 矢印: 証券市場 → 投資家 -->
+  <line class="arrow-line" x1="480" y1="180" x2="558" y2="180"/>
+
+  <!-- 投資家 -->
+  <rect class="box box-accent" x="570" y="140" width="180" height="80"/>
+  <text class="label" x="660" y="175" fill="#243b60">投資家</text>
+  <text class="sublabel" x="660" y="198">株式を購入</text>
+
+  <!-- 投資家の下: リターンとリスク -->
+  <line class="arrow-line-dual" x1="620" y1="220" x2="620" y2="290" marker-end="url(#arrowhead-green)"/>
+  <line class="arrow-line-dual" x1="700" y1="220" x2="700" y2="290" marker-end="url(#arrowhead-green)"/>
+
+  <!-- リターン（可能性） -->
+  <rect class="box" x="560" y="295" width="120" height="60" fill="#ffffff" stroke="#0e7c61" stroke-width="2" rx="8" ry="8"/>
+  <text class="gain" x="620" y="322">配当</text>
+  <text class="gain" x="620" y="340">値上がり益</text>
+
+  <!-- リスク -->
+  <rect class="box" x="700" y="295" width="80" height="60" fill="#ffffff" stroke="#b91c1c" stroke-width="2" rx="8" ry="8"/>
+  <text class="risk" x="740" y="330">値下がり</text>
+
+  <!-- 注記 -->
+  <text class="note" x="660" y="378">可能性とリスクの両方がある</text>
+
+  <!-- 上部 双方向の矢印注記 -->
+  <text class="note" x="330" y="115">株式</text>
+  <path d="M200,120 L270,120" stroke="#173b35" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  <text class="note" x="530" y="115">株式</text>
+  <path d="M490,120 L560,120" stroke="#173b35" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- 下部 資金の流れ -->
+  <text class="note" x="330" y="260">資金</text>
+  <path d="M270,250 L200,250" stroke="#0e7c61" stroke-width="1.5" fill="none" marker-end="url(#arrowhead-green)"/>
+  <text class="note" x="530" y="260">資金</text>
+  <path d="M560,250 L490,250" stroke="#0e7c61" stroke-width="1.5" fill="none" marker-end="url(#arrowhead-green)"/>
+</svg>

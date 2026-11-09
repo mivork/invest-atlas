@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="title-nisa desc-nisa">
+  <title id="title-nisa">新しいNISAの枠組み図</title>
+  <desc id="desc-nisa">新しいNISAの2つの投資枠（つみたて投資枠 年120万円、成長投資枠 年240万円）と、生涯非課税保有限度額1,800万円（うち成長投資枠は1,200万円まで）、非課税保有期間は無期限であることを示す図。</desc>
+  <style>
+    text { font-family: sans-serif; fill: #1a1a1a; }
+    .bucket { rx: 8; ry: 8; stroke-width: 2.5; }
+    .bucket-tsumitate { fill: #d9e6df; stroke: #0e7c61; }
+    .bucket-growth { fill: #ffffff; stroke: #243b60; }
+    .title { font-size: 18px; font-weight: bold; text-anchor: middle; fill: #173b35; }
+    .bucket-title { font-size: 16px; font-weight: bold; text-anchor: middle; }
+    .amount { font-size: 22px; font-weight: bold; text-anchor: middle; }
+    .sub { font-size: 13px; fill: #4a4a4a; text-anchor: middle; }
+    .total-box { rx: 8; ry: 8; fill: #f5f6f2; stroke: #173b35; stroke-width: 2; }
+    .total-label { font-size: 15px; font-weight: bold; text-anchor: middle; fill: #173b35; }
+    .total-amount { font-size: 20px; font-weight: bold; text-anchor: middle; fill: #173b35; }
+    .note-box { rx: 8; ry: 8; fill: #0a2540; }
+    .note-text { font-size: 14px; fill: #ffffff; text-anchor: middle; }
+    .info { font-size: 13px; fill: #4a4a4a; text-anchor: middle; }
+    .plus { font-size: 28px; font-weight: bold; fill: #173b35; text-anchor: middle; }
+  </style>
+
+  <!-- タイトル -->
+  <text class="title" x="400" y="40">新しいNISA の枠組み</text>
+
+  <!-- つみたて投資枠 -->
+  <rect class="bucket bucket-tsumitate" x="80" y="70" width="280" height="180"/>
+  <text class="bucket-title" x="220" y="105" fill="#0e7c61">つみたて投資枠</text>
+  <text class="amount" x="220" y="155" fill="#0e7c61">年間 120万円</text>
+  <text class="sub" x="220" y="185">長期・積立・分散投資に</text>
+  <text class="sub" x="220" y="205">適した一定の投資信託</text>
+  <text class="sub" x="220" y="235">（金融庁の基準を満たすもの）</text>
+
+  <!-- + 記号 -->
+  <text class="plus" x="400" y="170">+</text>
+
+  <!-- 成長投資枠 -->
+  <rect class="bucket bucket-growth" x="440" y="70" width="280" height="180"/>
+  <text class="bucket-title" x="580" y="105" fill="#243b60">成長投資枠</text>
+  <text class="amount" x="580" y="155" fill="#243b60">年間 240万円</text>
+  <text class="sub" x="580" y="185">上場株式・投資信託等</text>
+  <text class="sub" x="580" y="205">（一部対象外あり）</text>
+  <line x1="470" y1="225" x2="710" y2="225" stroke="#e5e7eb" stroke-width="1"/>
+  <text class="sub" x="580" y="242" font-size="12">生涯限度額のうち 1,200万円 まで</text>
+
+  <!-- 年間合計 -->
+  <rect x="250" y="265" width="300" height="40" rx="20" ry="20" fill="#173b35"/>
+  <text x="400" y="291" font-size="15" font-weight="bold" fill="#ffffff" font-family="sans-serif" text-anchor="middle">年間投資枠 合計 360万円</text>
+
+  <!-- 生涯の限度額 -->
+  <rect class="total-box" x="120" y="320" width="560" height="50"/>
+  <text class="total-label" x="400" y="342">生涯の非課税保有限度額</text>
+  <text class="total-amount" x="400" y="364">1,800万円</text>
+
+  <!-- 注記: 非課税期間無期限 -->
+  <rect class="note-box" x="240" y="385" width="320" height="30" rx="15" ry="15"/>
+  <text class="note-text" x="400" y="405">非課税保有期間は無期限</text>
+</svg>

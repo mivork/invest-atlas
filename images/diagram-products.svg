@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="title-products desc-products">
+  <title id="title-products">金融商品マップ（リスクとリターンの概念配置）</title>
+  <desc id="desc-products">横軸にリスクの大きさ、縦軸に期待リターンの大きさを取り、預貯金・債券・投資信託（分散）・個別株の順に右上に配置される一般的な傾向を示す概念図。商品ごとに異なる。</desc>
+  <style>
+    text { font-family: sans-serif; fill: #1a1a1a; }
+    .axis { stroke: #d1d5db; stroke-width: 2; fill: none; }
+    .axis-label { font-size: 15px; fill: #4a4a4a; font-weight: bold; }
+    .product-dot { stroke-width: 2; }
+    .product-label { font-size: 15px; font-weight: bold; text-anchor: middle; }
+    .product-sub { font-size: 12px; fill: #4a4a4a; text-anchor: middle; }
+    .note { font-size: 13px; fill: #4a4a4a; text-anchor: middle; }
+    .badge { font-size: 12px; fill: #ffffff; }
+    .trend-line { stroke: #d1d5db; stroke-width: 1.5; stroke-dasharray: 6,4; fill: none; }
+  </style>
+
+  <!-- バッジ -->
+  <rect x="530" y="12" width="250" height="26" rx="13" ry="13" fill="#243b60"/>
+  <text class="badge" x="655" y="30" text-anchor="middle">概念図。一般的な傾向であり商品ごとに異なります</text>
+
+  <!-- 軸 -->
+  <line class="axis" x1="100" y1="340" x2="740" y2="340"/>
+  <line class="axis" x1="100" y1="340" x2="100" y2="60"/>
+  <polygon points="740,336 740,344 758,340" fill="#d1d5db"/>
+  <polygon points="96,60 104,60 100,42" fill="#d1d5db"/>
+
+  <!-- 軸ラベル -->
+  <text class="axis-label" x="420" y="375" text-anchor="middle">リスクの大きさ</text>
+  <text x="170" y="375" font-size="12" fill="#4a4a4a" font-family="sans-serif" text-anchor="middle">小さい</text>
+  <text x="680" y="375" font-size="12" fill="#4a4a4a" font-family="sans-serif" text-anchor="middle">大きい</text>
+
+  <text class="axis-label" x="55" y="200" text-anchor="middle" transform="rotate(-90, 55, 200)">期待リターンの大きさ</text>
+  <text x="80" y="330" font-size="12" fill="#4a4a4a" font-family="sans-serif" text-anchor="end">小</text>
+  <text x="80" y="80" font-size="12" fill="#4a4a4a" font-family="sans-serif" text-anchor="end">大</text>
+
+  <!-- 傾向線 -->
+  <path class="trend-line" d="M150,310 C250,280 450,180 680,100"/>
+
+  <!-- 預貯金 -->
+  <circle cx="180" cy="300" r="35" fill="#f5f6f2" stroke="#d1d5db" stroke-width="2" class="product-dot"/>
+  <text class="product-label" x="180" y="298">預貯金</text>
+  <text class="product-sub" x="180" y="314">元本確保型</text>
+
+  <!-- 債券 -->
+  <circle cx="320" cy="240" r="40" fill="#ffffff" stroke="#243b60" stroke-width="2" class="product-dot"/>
+  <text class="product-label" x="320" y="237" fill="#243b60">債券</text>
+  <text class="product-sub" x="320" y="255">比較的安定</text>
+
+  <!-- 投資信託（分散） -->
+  <circle cx="480" cy="175" r="45" fill="#d9e6df" stroke="#0e7c61" stroke-width="2" class="product-dot"/>
+  <text class="product-label" x="480" y="168" fill="#173b35">投資信託</text>
+  <text class="product-sub" x="480" y="186" fill="#173b35">（分散投資）</text>
+
+  <!-- 個別株 -->
+  <circle cx="640" cy="110" r="40" fill="#ffffff" stroke="#b45309" stroke-width="2" class="product-dot"/>
+  <text class="product-label" x="640" y="107" fill="#b45309">個別株</text>
+  <text class="product-sub" x="640" y="125">値動きが大きい</text>
+
+  <!-- 注記 -->
+  <text class="note" x="400" y="405">一般的な傾向を示しています。実際のリスク・リターンは個別の商品や市場環境により異なります</text>
+</svg>

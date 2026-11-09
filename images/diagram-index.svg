@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-labelledby="title-index desc-index">
+  <title id="title-index">指数（インデックス）の概念図</title>
+  <desc id="desc-index">複数の銘柄をまとめて1つの数値「指数」に変換するイメージ。市場全体の動きを把握する体温計のような役割を示す概念図。</desc>
+  <style>
+    text { font-family: sans-serif; fill: #1a1a1a; }
+    .stock-box { rx: 6; ry: 6; stroke-width: 1.5; fill: #ffffff; stroke: #d1d5db; }
+    .label { font-size: 12px; fill: #4a4a4a; text-anchor: middle; }
+    .title-text { font-size: 16px; font-weight: bold; text-anchor: middle; }
+    .arrow { stroke: #173b35; stroke-width: 2; fill: none; marker-end: url(#arrow-idx); }
+    .index-box { rx: 8; ry: 8; stroke-width: 2.5; }
+    .note { font-size: 13px; fill: #4a4a4a; text-anchor: middle; }
+    .metaphor { font-size: 14px; fill: #0e7c61; text-anchor: middle; font-style: italic; }
+    .concept-badge { font-size: 12px; fill: #ffffff; }
+  </style>
+  <defs>
+    <marker id="arrow-idx" markerWidth="12" markerHeight="8" refX="12" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#173b35"/>
+    </marker>
+  </defs>
+
+  <!-- 概念図バッジ -->
+  <rect x="640" y="12" width="140" height="26" rx="13" ry="13" fill="#243b60"/>
+  <text class="concept-badge" x="710" y="30" text-anchor="middle">概念図（イメージ）</text>
+
+  <!-- 左側: 複数の銘柄 -->
+  <text class="title-text" x="170" y="60">複数の銘柄</text>
+
+  <!-- 銘柄の箱（3x3グリッド） -->
+  <rect class="stock-box" x="60" y="80" width="70" height="50"/>
+  <text class="label" x="95" y="110">銘柄A</text>
+
+  <rect class="stock-box" x="140" y="80" width="70" height="50"/>
+  <text class="label" x="175" y="110">銘柄B</text>
+
+  <rect class="stock-box" x="220" y="80" width="70" height="50"/>
+  <text class="label" x="255" y="110">銘柄C</text>
+
+  <rect class="stock-box" x="60" y="140" width="70" height="50"/>
+  <text class="label" x="95" y="170">銘柄D</text>
+
+  <rect class="stock-box" x="140" y="140" width="70" height="50"/>
+  <text class="label" x="175" y="170">銘柄E</text>
+
+  <rect class="stock-box" x="220" y="140" width="70" height="50"/>
+  <text class="label" x="255" y="170">銘柄F</text>
+
+  <rect class="stock-box" x="100" y="200" width="70" height="50"/>
+  <text class="label" x="135" y="230">...</text>
+
+  <rect class="stock-box" x="180" y="200" width="70" height="50"/>
+  <text class="label" x="215" y="230">銘柄N</text>
+
+  <!-- 囲み枠 -->
+  <rect x="45" y="70" width="260" height="195" rx="8" ry="8" fill="none" stroke="#243b60" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- 矢印 -->
+  <line class="arrow" x1="320" y1="168" x2="420" y2="168"/>
+  <text x="370" y="155" font-size="13" fill="#173b35" font-family="sans-serif" text-anchor="middle">まとめる</text>
+
+  <!-- 右側: 指数 -->
+  <rect class="index-box" x="440" y="110" width="200" height="115" fill="#d9e6df" stroke="#0e7c61"/>
+  <text x="540" y="155" font-size="22" font-weight="bold" fill="#173b35" font-family="sans-serif" text-anchor="middle">指数</text>
+  <text x="540" y="180" font-size="14" fill="#4a4a4a" font-family="sans-serif" text-anchor="middle">1つの数値で</text>
+  <text x="540" y="200" font-size="14" fill="#4a4a4a" font-family="sans-serif" text-anchor="middle">市場全体の動きを表す</text>
+
+  <!-- 体温計メタファー -->
+  <text class="metaphor" x="540" y="260">市場全体の「体温計」のようなもの</text>
+
+  <!-- 下部の補足 -->
+  <line x1="40" y1="310" x2="760" y2="310" stroke="#e5e7eb" stroke-width="1"/>
+  <text class="note" x="400" y="340">例: 日経平均株価は日本の代表的な225銘柄、</text>
+  <text class="note" x="400" y="360">S&amp;P 500は米国の代表的な約500銘柄をまとめた指数です</text>
+</svg>

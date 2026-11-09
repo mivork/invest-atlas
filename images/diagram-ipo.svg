@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" role="img" aria-labelledby="title-ipo desc-ipo">
+  <title id="title-ipo">上場（IPO）までの流れ</title>
+  <desc id="desc-ipo">未上場の会社が準備・審査を経て上場（IPO）し、証券取引所で誰でも売買可能になるまでの4ステップを横フローで示す図。</desc>
+  <style>
+    text { font-family: sans-serif; fill: #1a1a1a; }
+    .step-box { rx: 8; ry: 8; stroke-width: 2; }
+    .step1 { fill: #f5f6f2; stroke: #d1d5db; }
+    .step2 { fill: #ffffff; stroke: #243b60; }
+    .step3 { fill: #d9e6df; stroke: #0e7c61; }
+    .step4 { fill: #ffffff; stroke: #173b35; }
+    .step-num { font-size: 12px; fill: #ffffff; text-anchor: middle; }
+    .step-title { font-size: 16px; font-weight: bold; text-anchor: middle; }
+    .step-desc { font-size: 13px; fill: #4a4a4a; text-anchor: middle; }
+    .arrow { stroke: #173b35; stroke-width: 2; fill: none; marker-end: url(#arrow-ipo); }
+  </style>
+  <defs>
+    <marker id="arrow-ipo" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#173b35"/>
+    </marker>
+  </defs>
+
+  <!-- Step 1 -->
+  <rect class="step-box step1" x="30" y="110" width="155" height="120"/>
+  <circle cx="108" cy="100" r="14" fill="#d1d5db"/>
+  <text class="step-num" x="108" y="105">1</text>
+  <text class="step-title" x="108" y="158">未上場会社</text>
+  <text class="step-desc" x="108" y="180">株式は自由に</text>
+  <text class="step-desc" x="108" y="196">売買できない</text>
+
+  <!-- 矢印 1→2 -->
+  <line class="arrow" x1="185" y1="170" x2="225" y2="170"/>
+
+  <!-- Step 2 -->
+  <rect class="step-box step2" x="237" y="110" width="155" height="120"/>
+  <circle cx="315" cy="100" r="14" fill="#243b60"/>
+  <text class="step-num" x="315" y="105">2</text>
+  <text class="step-title" x="315" y="158" fill="#243b60">準備・審査</text>
+  <text class="step-desc" x="315" y="180">財務情報の整備</text>
+  <text class="step-desc" x="315" y="196">取引所の審査</text>
+
+  <!-- 矢印 2→3 -->
+  <line class="arrow" x1="392" y1="170" x2="432" y2="170"/>
+
+  <!-- Step 3 -->
+  <rect class="step-box step3" x="444" y="110" width="155" height="120"/>
+  <circle cx="522" cy="100" r="14" fill="#0e7c61"/>
+  <text class="step-num" x="522" y="105">3</text>
+  <text class="step-title" x="522" y="158" fill="#173b35">上場（IPO）</text>
+  <text class="step-desc" x="522" y="180">証券取引所に</text>
+  <text class="step-desc" x="522" y="196">株式を公開</text>
+
+  <!-- 矢印 3→4 -->
+  <line class="arrow" x1="599" y1="170" x2="639" y2="170"/>
+
+  <!-- Step 4 -->
+  <rect class="step-box step4" x="651" y="110" width="130" height="120"/>
+  <circle cx="716" cy="100" r="14" fill="#173b35"/>
+  <text class="step-num" x="716" y="105">4</text>
+  <text class="step-title" x="716" y="155" fill="#173b35">誰でも</text>
+  <text class="step-title" x="716" y="175" fill="#173b35">売買可能</text>
+  <text class="step-desc" x="716" y="200">市場で自由に</text>
+  <text class="step-desc" x="716" y="216">取引できる</text>
+
+  <!-- 下部の補足 -->
+  <line x1="30" y1="280" x2="770" y2="280" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="400" y="310" font-size="13" fill="#4a4a4a" font-family="sans-serif" text-anchor="middle">IPO = Initial Public Offering（新規株式公開）</text>
+  <text x="400" y="332" font-size="13" fill="#4a4a4a" font-family="sans-serif" text-anchor="middle">上場により、一般の投資家も証券会社を通じて株式を売買できるようになります</text>
+</svg>

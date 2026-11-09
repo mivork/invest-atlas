@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="title-frontier desc-frontier">
+  <title id="title-frontier">効率的フロンティアの概念図</title>
+  <desc id="desc-frontier">横軸にリスク、縦軸にリターンを取り、左上へ凸の曲線（効率的フロンティア）を描く概念図。曲線上が最も効率的な資産配分で、曲線より下は非効率な組み合わせの領域であることを示す。</desc>
+  <style>
+    text { font-family: sans-serif; fill: #1a1a1a; }
+    .axis { stroke: #d1d5db; stroke-width: 2; fill: none; }
+    .axis-label { font-size: 15px; fill: #4a4a4a; font-weight: bold; }
+    .frontier { stroke: #0e7c61; stroke-width: 3; fill: none; }
+    .area-inefficient { fill: #f5f6f2; opacity: 0.7; }
+    .note { font-size: 13px; fill: #4a4a4a; text-anchor: middle; }
+    .badge { font-size: 12px; fill: #ffffff; }
+    .region-label { font-size: 14px; text-anchor: middle; }
+    .dot { stroke-width: 1.5; }
+  </style>
+
+  <!-- バッジ -->
+  <rect x="620" y="12" width="160" height="26" rx="13" ry="13" fill="#243b60"/>
+  <text class="badge" x="700" y="30" text-anchor="middle">概念図（イメージ）</text>
+
+  <!-- 軸 -->
+  <line class="axis" x1="100" y1="340" x2="720" y2="340"/>
+  <line class="axis" x1="100" y1="340" x2="100" y2="55"/>
+  <polygon points="720,336 720,344 738,340" fill="#d1d5db"/>
+  <polygon points="96,55 104,55 100,38" fill="#d1d5db"/>
+
+  <!-- 軸ラベル -->
+  <text class="axis-label" x="410" y="378" text-anchor="middle">リスク（標準偏差）</text>
+  <text x="170" y="378" font-size="12" fill="#4a4a4a" font-family="sans-serif" text-anchor="middle">小さい</text>
+  <text x="660" y="378" font-size="12" fill="#4a4a4a" font-family="sans-serif" text-anchor="middle">大きい</text>
+
+  <text class="axis-label" x="55" y="200" text-anchor="middle" transform="rotate(-90, 55, 200)">期待リターン</text>
+  <text x="82" y="330" font-size="12" fill="#4a4a4a" font-family="sans-serif" text-anchor="end">低</text>
+  <text x="82" y="75" font-size="12" fill="#4a4a4a" font-family="sans-serif" text-anchor="end">高</text>
+
+  <!-- 非効率な領域（薄い塗り） -->
+  <path class="area-inefficient" d="M180,280 Q200,310 300,310 Q450,310 550,290 Q620,275 660,240 L660,340 L100,340 L100,280 Z"/>
+
+  <!-- 効率的フロンティア曲線（左上へ凸） -->
+  <path class="frontier" d="M180,280 Q190,200 240,150 Q300,100 400,85 Q500,80 560,95 Q620,115 660,140"/>
+
+  <!-- 曲線上のポイント -->
+  <circle cx="180" cy="280" r="5" fill="#0e7c61" class="dot" stroke="#173b35"/>
+  <text x="160" y="275" font-size="12" fill="#0e7c61" font-family="sans-serif" text-anchor="end">低リスク</text>
+  <text x="160" y="290" font-size="12" fill="#0e7c61" font-family="sans-serif" text-anchor="end">低リターン</text>
+
+  <circle cx="400" cy="85" r="5" fill="#0e7c61" class="dot" stroke="#173b35"/>
+
+  <circle cx="660" cy="140" r="5" fill="#0e7c61" class="dot" stroke="#173b35"/>
+  <text x="658" y="130" font-size="12" fill="#0e7c61" font-family="sans-serif" text-anchor="end">高リスク</text>
+  <text x="658" y="160" font-size="12" fill="#0e7c61" font-family="sans-serif" text-anchor="end">高リターン</text>
+
+  <!-- フロンティア曲線のラベル -->
+  <text x="310" y="95" font-size="15" font-weight="bold" fill="#0e7c61" font-family="sans-serif">効率的フロンティア</text>
+  <path d="M310,100 L280,120" stroke="#0e7c61" stroke-width="1.5" fill="none" marker-end="url(#arrow-fr)"/>
+  <defs>
+    <marker id="arrow-fr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#0e7c61"/>
+    </marker>
+  </defs>
+
+  <!-- 非効率な領域のラベル -->
+  <text class="region-label" x="400" y="310" fill="#4a4a4a">非効率な組み合わせの領域</text>
+  <text x="400" y="328" font-size="12" fill="#4a4a4a" font-family="sans-serif" text-anchor="middle">（同じリスクで、より高いリターンが得られる組み合わせが存在する）</text>
+
+  <!-- 非効率な点の例 -->
+  <circle cx="400" cy="230" r="4" fill="#d1d5db" stroke="#4a4a4a" stroke-width="1"/>
+  <circle cx="350" cy="260" r="4" fill="#d1d5db" stroke="#4a4a4a" stroke-width="1"/>
+  <circle cx="500" cy="250" r="4" fill="#d1d5db" stroke="#4a4a4a" stroke-width="1"/>
+  <circle cx="300" cy="240" r="4" fill="#d1d5db" stroke="#4a4a4a" stroke-width="1"/>
+  <circle cx="550" cy="220" r="4" fill="#d1d5db" stroke="#4a4a4a" stroke-width="1"/>
+
+  <!-- 下部の注記 -->
+  <text class="note" x="400" y="400">曲線上の組み合わせが、同じリスク水準で最も高いリターンが期待できる資産配分です</text>
+  <text class="note" x="400" y="418" font-size="12">※ 現代ポートフォリオ理論に基づく概念図です。実際の投資成果を保証するものではありません</text>
+</svg>
